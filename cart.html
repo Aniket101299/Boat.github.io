@@ -5,8 +5,376 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+            body{
+            background-color: white;
+        }
+            #redstrip {
+              width: 100%;
+              height: 20px;
+              background-color: #ff0000;
+              color: #ffffff;
+              text-align: center;
+              font-family: Montserrat, sans-serif;
+              font-size: 11.8px;
+              font-weight: 700;
+              line-height: 16.52px;
+              text-decoration: none solid rgb(255, 255, 255);
+              vertical-align: baseline;
+              letter-spacing: normal;
+              word-spacing: 0px;
+              margin: 0px;
+              padding-top: 6px;
+              font-style: normal;
+              font-variant: normal;
+            }
+            #blackStrip {
+              width: 100%;
+              height: 80px;
+              background-color: black;
+              display: flex;
+            }
+            #boat {
+              width: 100px;
+              height: 45px;
+              margin-left: 70px;
+              margin-top: 20px;
+            }
+            #nav {
+              width: 500px;
+              height: 35px;
+              /* border: 1px solid yellow; */
+              color: white;
+              margin-top: 25px;
+              margin-left: 360px;
+             display: flex;
+            }
+            #shop{
+            font-family: Montserrat, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            }
+            .down{
+                margin-top: 9px;
+                margin-left: 5px;
+            }
+            .ml{
+                margin-left: 10px;
+                font-family:Montserrat, sans-serif;
+                font-size:15px;
+                margin-top: 8px;
+            }
+            .line{
+              height: 22px;
+              display: inline-block;
+              border: 0.5px solid red;
+              margin-left: 13px;
+              margin-top: 3px;
+            }
+            #search{
+                width: 230px;
+                height: 41px;
+                background-color: white;
+                border-radius: 50px;
+                margin-left: 40px;
+                margin-top: 17px;
+                display: flex;
+                font-size: 18px;
+                font-family:sans-serif;
+                font-size:16px;
+                color: black;
+                font-weight:500;
+            }
+            .search{
+                color: red;
+                font-size: 14px;
+            }
+            #gift{
+                width: 20px;
+                height: 20px;
+                margin-top: 30px;
+                margin-left: 50px;
+            }
+            #man{
+                width: 20px;
+                height: 20px;
+                margin-top: 30px;
+                margin-left: 10px; 
+            }
+            #cartimg{
+                width: 20px;
+                height: 20px;
+                margin-top: 30px;
+                margin-left: 10px;
+            }
+            #title{
+                color: white;
+                text-align: center;
+                font-family:Montserrat, sans-serif;
+                font-size:50px;
+                font-weight:600;
+            }
+            /* #whiteBox{
+                background-color: white;
+                width: 500px;
+                height: 1000px;
+                margin: auto;
+                /* border: 1px solid white; */
+            }
+            /* #redBox{
+                width: 100%;
+                height: 50px;
+                background-color:crimson;
+                color: white;
+                text-align: center;
+                font-family:sans-serif;
+                font-size: 15px;
+                box-sizing: border-box;
+                padding: 10px;
+            } 
+            #whitesmoke{
+                background-color: whitesmoke;
+                width: 100%;
+                height: 70px;
+                display: flex;
+            }
+            #whitesmoke>h2{
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size: 20px;
+                margin-top: 25px;
+                margin-left: 20px;
+            } */
+            /* #whitesmoke>h3{
+                font-family: sans-serif;
+              
+                font-size: 17px;
+                margin-top: 25px;
+                margin-left: 20px;
+            } */
+        
+        
+          #heading {
+        font-size: 50px;
+        text-decoration: underline;
+        text-align: center;
+        color: blueviolet;
+        margin-top: 1px;
+      }
+      #container{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 353px 353px 353px 353px;
+      gap: 2%; 
+      /* border: 1px solid red;  */
+      }
+      #prodDiv{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          height: 610px;
+          /* border: 1px solid blue; */
+      }
+      #prodDiv>img{
+          width: 100%;
+          height: 60%;
+      }
+      button{
+          width: 100%;
+          height: 50px;
+          font-size: 25px;
+          background-color: #f09f35;
+          color: white;
+          border-radius: 3px;
+          border: none;
+      }
+      #cart{
+          background-color: teal;
+          color: white;
+          width: 200px;
+          margin-left: 1300px;
+      }
+      #itemNo{
+         margin-top: 110px; 
+          font-size: 20px;
+      }
+      #total{
+        font-size: 25px;
+        margin-top: -5px;
+      }
+      body{
+          /* border: 1px solid blue; */
+      }
+      #rightBox{
+          width: 260px;
+          height: 130px;
+          /* border: 1px solid yellow; */
+          margin-left: 1230px;
+          margin-top: -90px;
+          line-height: 10px;
+      }
+      #payment{
+          width: 100px;
+          height: 50px;
+          margin-top: -15px;
+          font-size: 20px;
+      }
+      #code{
+          width: 200px;
+          height: 80px;
+          /* border: 1px solid red; */
+         margin-top:-130px;
+         margin-left: 40px;
+      }
+      #promo{
+          width: 120px;
+          height:30px ;
+          font-size: 18px;
+          margin: 10px 0px 0px 0px;
+      }
+
+    </style>
 </head>
 <body>
-    <h1>cart</h1>
+    <div id="redstrip">
+        GET FLAT 15% SITEWIDE* | CASH ON DELIVERY IS NOW LIVE
+      </div>
+      <div id="blackStrip">
+        <img
+          id="boat"
+          src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x.png?v=1600753267"
+        />
+        <div id="nav">
+          <div id="shop" class="ml">Shop</div>
+          <i class="down fas fa-angle-down"></i>
+          <div class="line"></div>
+          <div class="ml">Flat 15% off</div>
+          <div class="line"></div>
+          <div class="ml">Plug-In Sale</div>
+          <div class="line"></div>
+          <div class="ml">More</div>
+          <i class="down fas fa-angle-down"></i>
+        </div>
+      
+          <i class="search fas fa-search"></i>
+          <input type="text" id="search" placeholder="        Search..." />
+          <img id="gift" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809" >
+          <img id="man" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/user_1.png?v=1606314823" > 
+          <img id="cartimg" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/cart.png?v=1606314839" >
+          
+      </div>
+      <!-- <div id="whiteBox">
+          <div id="redBox">
+              Free Shipping sitewide | Cash On Delivery available for order value upto Rs.3000
+          </div>
+          <div id="whitesmoke">
+              <h2>YOUR CART</h2>
+              <h3>(0 items)</h3>
+              </div>
+          </div id="container"></div>
+  </div> -->
+
+  <div id="rightBox">     
+<h5 id="itemNo"></h5>
+<div id="total"></div>
+  </div>
+  <div id="code">
+   <input id="promoCode" type="text" placeholder="Enter promo code" >
+   <button id="promo">Apply Promo</button>  
+  </div>
+
 </body>
 </html>
+
+
+
+
+
+
+<script>
+var cartItems = JSON.parse(localStorage.getItem("cartItemsProject"));
+// console.log(cartItems);
+
+var body = document.querySelector("body");
+    var mainDiv = document.createElement("div");
+    mainDiv.setAttribute("id","container");
+    body.append(mainDiv);
+
+displayProducts(cartItems);
+
+function displayProducts(cartItems) {
+
+cartItems.map(function(item,index) {
+// console.log(item);
+
+var imgDiv = document.createElement("div");
+imgDiv.setAttribute("id","prodDiv");
+
+var h2 = document.createElement("h2");
+h2.textContent = "Product name : " + item.name;
+
+var h3 = document.createElement("h3");
+h3.textContent = "Price : " + item.price;
+
+var h1 = document.createElement("h1");
+h1.textContent = "Type : " + item.type;
+
+var img = document.createElement("img");
+img.setAttribute("src",item.image_url);
+
+var btn = document.createElement("button");
+btn.textContent = "Remove from Cart" ;
+btn.addEventListener("click",function () {
+    removeFromCart(event,index);
+})
+
+imgDiv.append(img,h1,h2,h3,btn);
+    mainDiv.append(imgDiv);
+   
+    })
+
+    function removeFromCart(event,index) {
+        // console.log("hi");
+        // console.log(index);
+        // console.log(cartItems.length);
+        event.target.parentNode.remove();
+        var remove = cartItems.splice(index,1);
+        // console.log(remove);
+        // console.log(cartItems.length);
+        localStorage.setItem("cartItemsProject",JSON.stringify(cartItems));
+    }
+}
+
+var itemsNo = document.getElementById("itemNo");
+    itemNo.textContent = "No. of items = " + cartItems.length;
+
+    var total = cartItems.reduce(function (ac,cv) {
+        return (ac+Number(cv.price));
+    },0);
+    document.getElementById("total").innerHTML = `<h5>Total cost is : ${total} Rs </h5> <button id = "payment" onclick="goToPay()">Payment</button>`;
+    var rb = document.getElementById("rightBox");
+    var btn1 = document.querySelector("#payment");
+    rb.append(btn1);
+
+    function goToPay() {
+        alert("Thank you for purchasing");
+        window.location.href = "payment.html";
+    }
+    
+    document.getElementById("promo").addEventListener("click",applyPromo);
+
+    function applyPromo() {
+    if(document.getElementById("promoCode").value == "masai30") {
+        var total = cartItems.reduce(function (ac,cv) {
+        return (ac+Number(cv.price));
+    },0);
+    
+   var x = (total*(30/100));
+//    console.log(x);
+    total = total - x;
+    document.getElementById("total").innerHTML = `<h5>Total cost is : ${total} Rs </h5>`;
+
+    document.getElementById("promoCode").value = "";
+    }
+    }
+
+</script>
+     

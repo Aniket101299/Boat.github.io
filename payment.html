@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        text-decoration: overline;
+        margin-bottom: 50px;
+      }
+      #container {
+        height: 360px;
+        width: 410px;
+        border: 1px solid gray;
+        margin: auto;
+        padding: 20px 0px 10px 0px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      .ml {
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+      .size {
+        width: 86.5%;
+        height: 25px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+      }
+      button {
+        background-color: #f3cf76;
+        border: 1px solid gray;
+        border-radius: 3px;
+        padding: 8px;
+        width: 362px;
+        margin-left: 20px;
+      }
+      .b {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: serif;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Payment page</h1>
+    <div id="container">
+      <label class="ml b">Card number</label>
+      <br />
+      <input
+        class="ml size"
+        id="cardnum"
+        type="number"
+        placeholder="enter your card number"
+      />
+      <br />
+      <label class="ml b">CVV</label>
+      <br />
+      <input
+        class="ml size"
+        id="cvv"
+        type="number"
+        placeholder="enter your cvv"
+      />
+      <br />
+      <label class="ml b">Expiry</label>
+      <br />
+      <input
+        class="ml size"
+        id="exp"
+        type="number"
+        placeholder="enter card expiry date"
+      />
+      <br />
+      <label class="ml b">Name</label>
+      <br />
+      <input
+        class="ml size"
+        id="name"
+        type="text"
+        placeholder="enter your name"
+      />
+      <br />
+      <button id="pay">Pay</button>
+    </div>
+    <h1>Enter your OTP</h1>
+    <input id="otp" type="password" placeholder="enter your OTP" >
+    <button>Submit</button>
+  </body>
+</html>
+
+<script>
+  document.getElementById("pay").addEventListener("click", payCheck);
+
+  function payCheck() {
+      // console.log("hi");
+    var cardnum = document.getElementById("cardnum").value;
+    // console.log(cardnum);
+    // console.log(cardnum.length);
+    var cvv = document.getElementById("cvv").value;
+    var exp = document.getElementById("exp").value;
+    var name = document.getElementById("name").value;
+
+    if (cardnum.length == 16) {
+      if (cvv.length == 3) {
+        if (exp.length == 5 && name.length > 1) {
+          alert("OTP sent to your registered mobile number");
+          var btn = document.querySelector("button").addEventListener("click",checkOtp);
+        } else {
+          alert("Enter proper expiry date of card");
+        }
+      } else {
+        alert("Enter proper CVV");
+      }
+    } else {
+      alert("Enter valid card number");
+    }
+  }
+
+  function checkOtp() {
+    if(document.getElementById("otp").value == 1234) {
+    alert("Payment successful"); 
+    alert("Order placed successfully") ;
+} else {
+    alert("Wrong OTP");
+}
+document.getElementById("otp").value = "";
+}
+</script>

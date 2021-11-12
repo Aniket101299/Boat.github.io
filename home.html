@@ -90,10 +90,10 @@
                 color: black;
                 font-weight:500;
             }
-            .search{
+            /* .search{
                 color: red;
                 font-size: 14px;
-            }
+            } */
             #gift{
                 width: 20px;
                 height: 20px;
@@ -127,13 +127,62 @@
               width: 90%;
               height: 440px;
               margin: auto;
-              border: 1px solid red;
+              /* border: 1px solid red; */
               margin-top: -30px;
+              color: white;
             } 
             #prodDiv{
-              border: 1px solid blue;
+              /* border: 1px solid blue; */
               border-radius: 15px;
-            }         
+              background-color: white;
+            }
+            #indiv{
+              display: flex;
+              height:60%;
+              width: 100%;
+              background-color:#c4c4c4 ;
+              border-radius: 15px;
+            }
+            #indiv>img{
+            margin-left: -10px;
+            }
+            #indiv>h5{
+            background-color: white;
+            color: red;
+            width: 100px;
+            height: 10px;
+            margin-top: 10px;
+            padding-top: 4px;
+            padding-bottom: 8px;
+            }
+            #prodDiv>h3{
+              color:black;
+              margin-left: 15px;
+            }
+            #prodDiv>h4{
+              color:red;
+              font-size: 18px;
+              margin-top: -12px;
+              margin-left: 15px;
+            }
+            #prodDiv>p{
+              color:black;
+              font-size: 15px;
+              line-height: 3px;
+              margin-left: 15px;
+            }
+            button{
+              background-color: black;
+              padding: 3px;
+              color: white;
+              border-radius: 50px;
+              width: 100px;
+              height: 30px;
+              margin-left: 15px;
+            }
+            #mt{
+              margin-top: -10px;
+            } 
        
     </style>
   </head>
@@ -154,7 +203,7 @@
         <div class="line"></div>
         <div class="ml">Plug-In Sale</div>
         <div class="line"></div>
-        <div class="ml">More</div>
+        <div id="more" class="ml">More</div>
         <i class="down fas fa-angle-down"></i>
       </div>
     
@@ -237,38 +286,43 @@ let cont1 = document.getElementById("cont1");
   var imgDiv = document.createElement("div");
   imgDiv.setAttribute("id","prodDiv");
 
+var innerDiv = document.createElement("div");
+innerDiv.setAttribute("id", "indiv");
+
   var h3 = document.createElement("h3");
   h3.textContent = item.name;
 
   var h4 = document.createElement("h4");
-  h4.textContent = item.price;
+  h4.textContent = "Rs. " + item.price;
 
   var h5 = document.createElement("h5");
-  h5.textContent = item.save;
+  h5.textContent = "YOU SAVE " + item.save;
 
   var p1 = document.createElement("p");
-  p1.textContent = item.chars.[0];
+  p1.textContent = item.chars[0];
+  p1.setAttribute("id", "mt");
 
   var p2 = document.createElement("p");
-  p2.textContent = item.chars.[0];
+  p2.textContent = item.chars[1];
 
-  var p1 = document.createElement("p");
-  p1.textContent = item.chars.[0];
+  var p3 = document.createElement("p");
+  p3.textContent = item.chars[2];
 
-  // var img = document.createElement("img");
-  // img.setAttribute("src",item.image_url);
+  var img = document.createElement("img");
+  img.setAttribute("src",item.image_url);
 
   var btn = document.createElement("button");
-  btn.textContent = "Shop Now" ;
+  btn.textContent = "Shop Now";
   btn.addEventListener("click",function () {
       addToCart(item);
   })
-  
-  imgDiv.append(img,h1,h2,h3,btn);
+  innerDiv.append(h5,img);
+  imgDiv.append(innerDiv,h3,h4,p1,p2,p3,btn);
   mainDiv.append(imgDiv);
  
   })
 
+  
   function addToCart(item) {
   for(var i=0; i<cart.length; i++) {
   if(cart[i].name == item.name) {
@@ -280,6 +334,26 @@ let cont1 = document.getElementById("cont1");
   window.location.href = "cart.html";
   }
 
+  }
+
+
+  document.getElementById("man").addEventListener("click",gotoLogin);
+
+  function gotoLogin() {
+    window.location.href = "login.html";
+  }
+
+  document.getElementById("cartimg").addEventListener("click",gotoCart);
+
+  function gotoCart() {
+    window.location.href = "cart.html";
+  }
+
+
+  document.getElementById("more").addEventListener("click",shop);
+
+  function shop() {
+    window.location.href = "offerzone.html";
   }
 
 </script>
