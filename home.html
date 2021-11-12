@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Home page means product page -->
+    <script
+      src="https://kit.fontawesome.com/938dcf5404.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        body{
+            background-color: black;
+        }
+            #redstrip {
+              width: 100%;
+              height: 20px;
+              background-color: #ff0000;
+              color: #ffffff;
+              text-align: center;
+              font-family: Montserrat, sans-serif;
+              font-size: 11.8px;
+              font-weight: 700;
+              line-height: 16.52px;
+              text-decoration: none solid rgb(255, 255, 255);
+              vertical-align: baseline;
+              letter-spacing: normal;
+              word-spacing: 0px;
+              margin: 0px;
+              padding-top: 6px;
+              font-style: normal;
+              font-variant: normal;
+            }
+            #blackStrip {
+              width: 100%;
+              height: 80px;
+              background-color: black;
+              display: flex;
+            }
+            #boat {
+              width: 100px;
+              height: 45px;
+              margin-left: 70px;
+              margin-top: 20px;
+            }
+            #nav {
+              width: 500px;
+              height: 35px;
+              /* border: 1px solid yellow; */
+              color: white;
+              margin-top: 25px;
+              margin-left: 360px;
+             display: flex;
+            }
+            #shop{
+            font-family: Montserrat, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            }
+            .down{
+                margin-top: 9px;
+                margin-left: 5px;
+            }
+            .ml{
+                margin-left: 10px;
+                font-family:Montserrat, sans-serif;
+                font-size:15px;
+                margin-top: 8px;
+            }
+            .line{
+              height: 22px;
+              display: inline-block;
+              border: 0.5px solid red;
+              margin-left: 13px;
+              margin-top: 3px;
+            }
+            #search{
+                width: 230px;
+                height: 41px;
+                background-color: white;
+                border-radius: 50px;
+                margin-left: 40px;
+                margin-top: 17px;
+                display: flex;
+                font-size: 18px;
+                font-family:sans-serif;
+                font-size:16px;
+                color: black;
+                font-weight:500;
+            }
+            .search{
+                color: red;
+                font-size: 14px;
+            }
+            #gift{
+                width: 20px;
+                height: 20px;
+                margin-top: 30px;
+                margin-left: 50px;
+            }
+            #man{
+                width: 20px;
+                height: 20px;
+                margin-top: 30px;
+                margin-left: 10px; 
+            }
+            #cartimg{
+                width: 20px;
+                height: 20px;
+                margin-top: 30px;
+                margin-left: 10px;
+            }
+            #title{
+                color: white;
+                text-align: center;
+                font-family:Montserrat, sans-serif;
+                font-size:50px;
+                font-weight:600;
+            }
+            #dailyDeal{
+              display: grid;
+              grid-template-columns: 443px 443px 443px ;
+              grid-template-rows: 100% 100% 100%;
+              grid-column-gap: 10px;
+              width: 90%;
+              height: 440px;
+              margin: auto;
+              border: 1px solid red;
+              margin-top: -30px;
+            } 
+            #prodDiv{
+              border: 1px solid blue;
+              border-radius: 15px;
+            }         
+       
+    </style>
+  </head>
+  <body>
+    <div id="redstrip">
+      GET FLAT 15% SITEWIDE* | CASH ON DELIVERY IS NOW LIVE
+    </div>
+    <div id="blackStrip">
+      <img
+        id="boat"
+        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x.png?v=1600753267"
+      />
+      <div id="nav">
+        <div id="shop" class="ml">Shop</div>
+        <i class="down fas fa-angle-down"></i>
+        <div class="line"></div>
+        <div class="ml">Flat 15% off</div>
+        <div class="line"></div>
+        <div class="ml">Plug-In Sale</div>
+        <div class="line"></div>
+        <div class="ml">More</div>
+        <i class="down fas fa-angle-down"></i>
+      </div>
+    
+        <i class="search fas fa-search"></i>
+        <input type="text" id="search" placeholder="        Search..." />
+        <img id="gift" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809" >
+        <img id="man" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/user_1.png?v=1606314823" > 
+        <img id="cartimg" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/cart.png?v=1606314839" >
+        
+    </div>
+    <div id="cont1"></div>
+    <br>
+    <br>
+    <br>
+    <p id="title">Daily Deals</p>
+    
+    <div id="dailyDeal"></div>
+  </body>
+</html>
+
+
+
+
+<script>
+
+let cont1 = document.getElementById("cont1");
+    // cont1.style.display = "flex";
+    // cont1.style.gap = "2%";
+    // cont1.style.margin = "2% 2% 2% 2%";
+    let slide = document.createElement("div");
+    cont1.append(slide);
+    let slidedata = [
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/flat15_off_wbanner_2000X1000.jpg?v=1636526312",
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Zenit_wbanner_4a54a116-94ae-4471-b619-57a4577d8efe_2000X1000.jpg?v=1636625277",
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Xplorer-O2_wbanner_2000X1000.jpg?v=1636625365",
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/COD_web-Banner_2000X1000.jpg?v=1635237557",
+    ]
+    slide.style.width = "100%";
+    slide.style.height = "810px";
+    let inter;
+    function startSlide(){
+        let c = 0;
+            let img = document.createElement('img')
+            img.src = slidedata[c];
+            img.style.width = "100%"
+            img.style.height = "810px"
+            slide.append(img);
+            c++;
+             inter = setInterval(function(){
+            slide.innerHTML = null;
+            if(c == slidedata.length){
+                c=0;
+            }
+            let img = document.createElement('img')
+            img.src = slidedata[c];
+            img.style.width = "100%"
+            img.style.height = "750px"
+            slide.append(img);
+            c++;
+        }, 4000)
+    }
+     startSlide();
+
+
+
+
+  var products = JSON.parse(localStorage.getItem("addListProject"));
+  // console.log(products);
+  var mainDiv = document.getElementById("dailyDeal");
+
+  displayProducts(products);
+
+  var cart = JSON.parse(localStorage.getItem("cartItemsProject")) || []; 
+
+ function displayProducts(products) {
+
+  products.map(function(item) {
+  // console.log(item);
+
+  var imgDiv = document.createElement("div");
+  imgDiv.setAttribute("id","prodDiv");
+
+  var h3 = document.createElement("h3");
+  h3.textContent = item.name;
+
+  var h4 = document.createElement("h4");
+  h4.textContent = item.price;
+
+  var h5 = document.createElement("h5");
+  h5.textContent = item.save;
+
+  var p1 = document.createElement("p");
+  p1.textContent = item.chars.[0];
+
+  var p2 = document.createElement("p");
+  p2.textContent = item.chars.[0];
+
+  var p1 = document.createElement("p");
+  p1.textContent = item.chars.[0];
+
+  // var img = document.createElement("img");
+  // img.setAttribute("src",item.image_url);
+
+  var btn = document.createElement("button");
+  btn.textContent = "Shop Now" ;
+  btn.addEventListener("click",function () {
+      addToCart(item);
+  })
+  
+  imgDiv.append(img,h1,h2,h3,btn);
+  mainDiv.append(imgDiv);
+ 
+  })
+
+  function addToCart(item) {
+  for(var i=0; i<cart.length; i++) {
+  if(cart[i].name == item.name) {
+  return alert("Product is already in the cart");
+  }
+  }
+  cart.push(item);
+  localStorage.setItem("cartItemsProject",JSON.stringify(cart));
+  window.location.href = "cart.html";
+  }
+
+  }
+
+</script>

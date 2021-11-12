@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         h1 {
+        font-size: 40px;
+        text-decoration: underline;
+        text-align: center;
+      }
+      h2{
+          color: blueviolet;
+          font-size: 22px;
+      }
+    </style>
+</head>
+<body>
+ <h1>Welcome to Admin page</h1>
+ <h2>Add Products</h2>
+ <form id="form">
+     <input id="name" type="text" placeholder="enter product name" >
+     <input id="price" type="text" placeholder="enter price" >
+     <input id="save" type="text" placeholder="how much save" >
+     <input id="char1" type="text" placeholder="enter char 1" >
+     <input id="char2" type="text" placeholder="enter char 2">
+     <input id="char3" type="text" placeholder="enter char 3" >
+     <input id="img" type="text" placeholder="enter image url" >
+     <input type="submit" > 
+ </form>
+</body>
+</html>
+
+
+<script>
+    document.getElementById("form").addEventListener("submit",addItem);
+
+    var products = JSON.parse(localStorage.getItem("addListProject")) || [];
+
+    function addItem(event) {
+     event.preventDefault();
+
+     var productObj = {
+     name: form.name.value,
+     price: form.price.value,
+     save : form.save.value,
+     chars:[form.char1.value,form.char2.value,form.char3.value],
+     image_url:form.img.value,
+     }
+     
+     products.push(productObj);
+     localStorage.setItem("addListProject",JSON.stringify(products));
+
+     form.name.value = "";
+   form.price.value = "";
+    form.save.value = "";
+     form.char1.value = "";
+     form.char2.value = "";
+     form.char3.value = "";
+    form.img.value = "";
+
+    }
+
+ 
+</script>
