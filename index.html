@@ -3567,8 +3567,12 @@ document.getElementById("cash").addEventListener("mouseleave",function() {
   document.getElementById("cards").style.color="white";
 });
 
+document.getElementById("cards").addEventListener("click",function() {
+  window.location.href = "payment.html";
+})
+
 document.getElementById("contiShop").addEventListener("click",function() {
-  window.location.href = "home.html";
+  window.location.href = "index.html";
   document.getElementById("cartPage").style.display = "none";
 });
 
