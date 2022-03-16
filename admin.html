@@ -27,7 +27,8 @@
      <input id="char1" type="text" placeholder="enter char 1" >
      <input id="char2" type="text" placeholder="enter char 2">
      <input id="char3" type="text" placeholder="enter char 3" >
-     <input id="img" type="text" placeholder="enter image url" >
+     <input id="img1" type="text" placeholder="enter image url1" >
+     <input id="img2" type="text" placeholder="enter image url2" >
      <input type="submit" > 
  </form>
 </body>
@@ -47,7 +48,8 @@
      price: form.price.value,
      save : form.save.value,
      chars:[form.char1.value,form.char2.value,form.char3.value],
-     image_url:form.img.value,
+     image_url1:form.img1.value,
+     image_url2:form.img2.value,
      }
      
      products.push(productObj);
@@ -59,7 +61,8 @@
      form.char1.value = "";
      form.char2.value = "";
      form.char3.value = "";
-    form.img.value = "";
+    form.img1.value = "";
+    form.img2.value = "";
 
     }
 

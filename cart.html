@@ -120,7 +120,7 @@
                 height: 1000px;
                 margin: auto;
                 /* border: 1px solid white; */
-            }
+            /* } */
             /* #redBox{
                 width: 100%;
                 height: 50px;
@@ -200,9 +200,9 @@
         font-size: 25px;
         margin-top: -5px;
       }
-      body{
+      /* body{ */
           /* border: 1px solid blue; */
-      }
+      /* } */
       #rightBox{
           width: 260px;
           height: 130px;
@@ -274,7 +274,8 @@
 
   <div id="rightBox">     
 <h5 id="itemNo"></h5>
-<div id="total"></div>
+<h5 id="total"></h5>
+<button id = "payment" onclick="goToPay()">Payment</button>
   </div>
   <div id="code">
    <input id="promoCode" type="text" placeholder="Enter promo code" >
@@ -314,25 +315,16 @@ h2.textContent = "Product name : " + item.name;
 var h3 = document.createElement("h3");
 h3.textContent = "Price : " + item.price;
 
-var h1 = document.createElement("h1");
-h1.textContent = "Type : " + item.type;
+// var h1 = document.createElement("h1");
+// h1.textContent = "Type : " + item.type;
 
 var img = document.createElement("img");
-img.setAttribute("src",item.image_url);
+img.setAttribute("src",item.image_url1);
 
 var btn = document.createElement("button");
 btn.textContent = "Remove from Cart" ;
-btn.addEventListener("click",function () {
-    removeFromCart(event,index);
-})
-
-imgDiv.append(img,h1,h2,h3,btn);
-    mainDiv.append(imgDiv);
-   
-    })
-
-    function removeFromCart(event,index) {
-        // console.log("hi");
+btn.addEventListener("click",function (event,index) {
+      // console.log("hi");
         // console.log(index);
         // console.log(cartItems.length);
         event.target.parentNode.remove();
@@ -340,19 +332,38 @@ imgDiv.append(img,h1,h2,h3,btn);
         // console.log(remove);
         // console.log(cartItems.length);
         localStorage.setItem("cartItemsProject",JSON.stringify(cartItems));
-    }
-}
 
 var itemsNo = document.getElementById("itemNo");
     itemNo.textContent = "No. of items = " + cartItems.length;
+  
+})
+
+imgDiv.append(img,h2,h3,btn);
+    mainDiv.append(imgDiv);
+   
+    })
+
+}
+
+
+window.addEventListener("load",function() {
+var itemsNo = document.getElementById("itemNo");
+    itemNo.textContent = "No. of items = " + cartItems.length;
+});
+
+
+
+// window.addEventListener("load",function() {
 
     var total = cartItems.reduce(function (ac,cv) {
-        return (ac+Number(cv.price));
+        return ac + Number (cv.price);
     },0);
-    document.getElementById("total").innerHTML = `<h5>Total cost is : ${total} Rs </h5> <button id = "payment" onclick="goToPay()">Payment</button>`;
-    var rb = document.getElementById("rightBox");
-    var btn1 = document.querySelector("#payment");
-    rb.append(btn1);
+
+    document.getElementById("total").textContent = `Total cost is : ${total} Rs`;
+ 
+// });
+
+
 
     function goToPay() {
         alert("Thank you for purchasing");

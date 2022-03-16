@@ -5,355 +5,3850 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- <title>Buy Earbuds, Headphones, Earphones at India's No.1 Earwear  boAt-lifestyle.com</title> -->
+    <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
     <!-- Home page means product page -->
     <script
       src="https://kit.fontawesome.com/938dcf5404.js"
       crossorigin="anonymous"
     ></script>
     <style>
-        body{
-            background-color: black;
+      body {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+      }
+      #redstrip {
+        cursor: pointer;
+        width: 100%;
+        height: 20px;
+        background-color: #ff0000;
+        color: #ffffff;
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+        font-size: 11.8px;
+        font-weight: 700;
+        line-height: 16.52px;
+        text-decoration: none solid rgb(255, 255, 255);
+        vertical-align: baseline;
+        letter-spacing: normal;
+        word-spacing: 0px;
+        margin: 0px;
+        padding-top: 6px;
+        font-style: normal;
+        font-variant: normal;
+      }
+      #blackStrip {
+        width: 100%;
+        height: 80px;
+        background-color: black;
+        display: flex;
+      }
+      #boat {
+        cursor: pointer;
+        width: 100px;
+        height: 45px;
+        margin-left: 70px;
+        margin-top: 20px;
+      }
+      #nav {
+        width: 500px;
+        height: 35px;
+        /* border: 1px solid yellow; */
+        color: white;
+        margin-top: 25px;
+        margin-left: 340px;
+        /* display: flex; */
+      }
+      #shop {
+        font-family: Montserrat, sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+      }
+     
+      .down {
+        margin-top: 9px;
+        margin-left: 5px;
+      }
+      .ml {
+        cursor: pointer;
+        margin-left: 10px;
+        font-family: Montserrat, sans-serif;
+        font-size: 15px;
+      }
+      .moreHover{
+        /* border: 1px solid red; */
+        padding-bottom: 23px;
+        padding-right: 10px;
+        padding-top: 8px;
+      }
+      .moreHover:hover #moreOption{
+        display: block;
+      }
+      #moreOption {
+        display: none;
+        width: 16%;
+        height: 183px;
+        margin-top: 23px;
+        margin-left: 323px;
+        background-color: rgb(36, 27, 27);
+        /* border: 1px solid red; */
+        position: absolute;
+        z-index: 1;
+      }
+      #moreOption p {
+        margin-left: 15px;
+        color: whitesmoke;
+        font-family: sans-serif;
+        /* font-weight:200; */
+        font-size: 16px;
+      }
+      #moreOption p:hover{
+        color: red;
+      }
+      .line {
+        height: 22px;
+        border: 0.5px solid red;
+        margin-left: 13px;
+      
+      }
+      #search {
+        width: 245px;
+        height: 44px;
+        background-color: white;
+        border-radius: 50px;
+        margin-left: 70px;
+        margin-top: 17px;
+        display: flex;
+        /* font-size: 18px; */
+        font-family: sans-serif;
+        font-size: 17px;
+        color: black;
+        font-weight: 500;
+      }
+      #search:focus{
+        outline: none;
+      }
+      .search{
+        position: absolute;
+        top:58px;
+        left:1091px;       
+         font-size: 14px;           
+         height: 20px;
+         width: 20px; 
         }
-            #redstrip {
-              width: 100%;
-              height: 20px;
-              background-color: #ff0000;
-              color: #ffffff;
-              text-align: center;
-              font-family: Montserrat, sans-serif;
-              font-size: 11.8px;
-              font-weight: 700;
-              line-height: 16.52px;
-              text-decoration: none solid rgb(255, 255, 255);
-              vertical-align: baseline;
-              letter-spacing: normal;
-              word-spacing: 0px;
-              margin: 0px;
-              padding-top: 6px;
-              font-style: normal;
-              font-variant: normal;
-            }
-            #blackStrip {
-              width: 100%;
-              height: 80px;
-              background-color: black;
-              display: flex;
-            }
-            #boat {
-              width: 100px;
-              height: 45px;
-              margin-left: 70px;
-              margin-top: 20px;
-            }
-            #nav {
-              width: 500px;
-              height: 35px;
-              /* border: 1px solid yellow; */
-              color: white;
-              margin-top: 25px;
-              margin-left: 360px;
-             display: flex;
-            }
-            #shop{
-            font-family: Montserrat, sans-serif;
-            font-size: 15px;
-            font-weight: 700;
-            }
-            .down{
-                margin-top: 9px;
-                margin-left: 5px;
-            }
-            .ml{
-                margin-left: 10px;
-                font-family:Montserrat, sans-serif;
-                font-size:15px;
-                margin-top: 8px;
-            }
-            .line{
-              height: 22px;
-              display: inline-block;
-              border: 0.5px solid red;
-              margin-left: 13px;
-              margin-top: 3px;
-            }
-            #search{
-                width: 230px;
-                height: 41px;
-                background-color: white;
-                border-radius: 50px;
-                margin-left: 40px;
-                margin-top: 17px;
-                display: flex;
-                font-size: 18px;
-                font-family:sans-serif;
-                font-size:16px;
-                color: black;
-                font-weight:500;
-            }
-            /* .search{
-                color: red;
-                font-size: 14px;
-            } */
-            #gift{
-                width: 20px;
-                height: 20px;
-                margin-top: 30px;
-                margin-left: 50px;
-            }
-            #man{
-                width: 20px;
-                height: 20px;
-                margin-top: 30px;
-                margin-left: 10px; 
-            }
-            #cartimg{
-                width: 20px;
-                height: 20px;
-                margin-top: 30px;
-                margin-left: 10px;
-            }
-            #title{
-                color: white;
-                text-align: center;
-                font-family:Montserrat, sans-serif;
-                font-size:50px;
-                font-weight:600;
-            }
-            #dailyDeal{
-              display: grid;
-              grid-template-columns: 443px 443px 443px ;
-              grid-template-rows: 100% 100% 100%;
-              grid-column-gap: 10px;
-              width: 90%;
-              height: 440px;
-              margin: auto;
-              /* border: 1px solid red; */
-              margin-top: -30px;
-              color: white;
-            } 
-            #prodDiv{
-              /* border: 1px solid blue; */
-              border-radius: 15px;
-              background-color: white;
-            }
-            #indiv{
-              display: flex;
-              height:60%;
-              width: 100%;
-              background-color:#c4c4c4 ;
-              border-radius: 15px;
-            }
-            #indiv>img{
-            margin-left: -10px;
-            }
-            #indiv>h5{
-            background-color: white;
-            color: red;
-            width: 100px;
-            height: 10px;
-            margin-top: 10px;
-            padding-top: 4px;
-            padding-bottom: 8px;
-            }
-            #prodDiv>h3{
-              color:black;
-              margin-left: 15px;
-            }
-            #prodDiv>h4{
-              color:red;
-              font-size: 18px;
-              margin-top: -12px;
-              margin-left: 15px;
-            }
-            #prodDiv>p{
-              color:black;
-              font-size: 15px;
-              line-height: 3px;
-              margin-left: 15px;
-            }
-            button{
-              background-color: black;
-              padding: 3px;
-              color: white;
-              border-radius: 50px;
-              width: 100px;
-              height: 30px;
-              margin-left: 15px;
-            }
-            #mt{
-              margin-top: -10px;
-            } 
+      #gift {
+        width: 20px;
+        height: 20px;
+        margin-top: 30px;
+        margin-left: 40px;
+      }
+      #man {
+        width: 20px;
+        height: 20px;
+        margin-top: 30px;
+        margin-left: 13px;
+      }
+      #cartimg {
+        width: 20px;
+        height: 20px;
+        margin-top: 30px;
+        margin-left: 13px;
+      }
+      #cartItemCount{
+        cursor: pointer;
+        background-color: red;
+        text-align: center;
+        color: white;
+        width: 20px;
+        height: 16px;
+        border-radius: 9px;
+        font-size: 13.2px;
+        font-weight: 400;
+        letter-spacing:normal;
+        line-height: 20px;
+        padding-bottom: 3px;
+        margin-top: 22px;
+        margin-left: -9px;
+      }
+      #gift,#man,#cartimg:hover{
+        cursor: pointer;
+      }
+      #loginPopUp{
+        display: none;
+        position: absolute;
+         width: 220px;
+         height: 100px;
+         border-radius: 3px;
+         background-color: white;
+         margin-top: 52px;
+         margin-left: 1260px;
+         border: 0.5px solid gainsboro;
+       }
+       #loginPopUp>#x{
+         font-family: sans-serif;
+         font-size: 24px;
+         font-weight: 400;
+         margin-left: 195px;
+         margin-top: 2px;
+         cursor: pointer;
+       }
+      
+       #hiboAt{
+        font-family: sans-serif;
+         font-size: 15px;
+         font-weight: 700;
+         margin-left: 10px;
+         margin-top: -25px;
+         color: red; 
+       }
+       #login{
+         cursor: pointer;
+         width: 199px;
+         height: 22px;
+         background-color: #ea2127;
+         color: white;
+         margin-left: 10px;
+         padding-top: 9px;
+         text-align: center;
+        font-family: sans-serif;
+         font-size: 14px;
+         font-weight: 700;
+       }
+      #title {
+        color: white;
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 20px;
+      }
+      #dailyDeal {
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: 443px 443px 443px;
+        grid-template-rows: 100% 100% 100%;
+        grid-column-gap: 10px;
+        width: 90%;
+        height: 487px;
+        margin: auto;
+        /* border: 1px solid red; */
+        margin-top: -30px;
+        color: white;
+      }
+      #prodDiv {
+        /* border: 2px solid blue; */
+        border-radius: 15px;
+        background-color: white;
+      }
+      #indiv {
+        display: flex;
+        height: 60%;
+        width: 100%;
+        background-color: #c4c4c4;
+        border-radius: 15px;
+        /* border: 1px solid red; */
+      }
+      #indiv > img {
+        margin-left: -10px;
+      }
+      #indiv > h5 {
+        background-color: white;
+        color: red;
+        width: 115px;
+        height: 10px;
+        margin-top: 12px;
+        padding-top: 4px;
+        padding-bottom: 8px;
+        font-family: Montserrat, sans-serif;
+        font-size: 13px;
+        font-weight: 800;
+      padding-left: 8px;
+      }
+      #prodDiv > h3 {
+        color: black;
+        margin-left: 15px;
+        font-family: Montserrat, sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+      }
+      #prodDiv > h4 {
+        color: red;
        
+        margin-top: -7px;
+        margin-left: 15px;
+        font-family: Montserrat, sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+      }
+      #prodDiv > p {
+        color: rgb(80, 70, 70);
+        /* color: #929292; */
+        font-size: 13.5px;
+        line-height: 4px;
+        margin-left: 15px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 400;
+      }
+      button {
+        font-family: Montserrat, sans-serif;
+        cursor: pointer;
+        background-color: black;
+        line-height:normal;
+        vertical-align:baseline;
+        letter-spacing:normal;
+        word-spacing:0px;
+        /* padding: 3px; */
+        color: white;
+        border-radius: 50px;
+        width: 120px;
+        height: 37px;
+        margin-left: 15px;
+        margin-top: 10px;
+        border: none;
+        padding:11px 25px;
+        font-size: 13.8px;
+        font-weight: 500;
+        text-decoration:none solid rgb(255, 255, 255);
+      }
+      #mtfp {
+        margin-top: -5px;
+      }
+      
+      .outShopDiv{
+        cursor: pointer;
+        /* border: 1px solid red; */
+        width: 130px;
+        padding-bottom:28px ;
+        padding-top: 9px;
+        padding-right: 8px;
+        /*margin-top: -32px; */
+      }
+      .outShopDiv:hover #shopDiv{
+      display: block;
+      }
+      #shopDiv {
+     cursor: pointer;
+        display: none;
+        width: 100%;
+        height: 660px;
+        background-color: rgb(97, 89, 89);
+        position: absolute;
+       margin-top: 29px;
+       margin-left: -534px;
+      }
+      #Fgrid {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-row-gap: 8%;
+        margin-left: 2%;
+        padding-top: 2%;
+      }
+      #Tgrid {
+        display: grid;
+        grid-template-columns: repeat(3, 25%);
+        grid-column-gap: 4%;
+        margin-left: 15%;
+        margin-top: 2%;
+      }
+      #cont1{
+        cursor: pointer;
+        z-index: 1;
+      }
+      .container {
+        color: white;
+        background-color: black;
+        /* border: 1px solid red; */
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        overflow: hidden;
+      }
+      .container > p {
+        animation: anim 20s linear infinite;
+        font-family: sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+      @keyframes anim {
+        0% {
+          transform: translateX(1380px);
+        }
+        100% {
+          transform: translateX(-600%);
+        }
+      }
+
+      .container > p:nth-child(2) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      .container > p:nth-child(4) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      .container > p:nth-child(6) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        margin-left: 15px;
+      }
+      #trending {
+        color: white;
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 80px;
+        margin-bottom: 20px;
+      }
+      #trendingEarbuds {
+        cursor: pointer;
+        width: 100%;
+        height: 390px;
+        display: grid;
+        grid-template-columns: repeat(3, 440px);
+        grid-column-gap: 15px;
+        /* border: 1px solid red; */
+        margin-left: 80px;
+      }
+      #newlyLaunched {
+        color: white;
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 80px;
+        margin-bottom: 20px;
+      }
+      #newlyLaunchedItem {
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: 443px 443px 443px;
+        grid-template-rows: 100% 100% 100%;
+        grid-column-gap: 10px;
+        width: 90%;
+        height: 487px;
+        margin: auto;
+        /* border: 1px solid red; */
+        margin-top: 20px;
+        color: white;
+      }
+      #smartWatches {
+        color: white;
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 80px;
+        margin-bottom: 20px;
+      }
+      #smartWatchesItem {
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: 443px 443px 443px;
+        grid-template-rows: 100% 100% 100%;
+        grid-column-gap: 10px;
+        width: 90%;
+        height: 487px;
+        margin: auto;
+        /* border: 1px solid red; */
+        margin-top: 20px;
+        color: white;
+      }
+      #newlaunchesBox {
+        margin: auto;
+        width: 98%;
+        height: 430px;
+        background-color: #494949;
+      }
+      #newlaunches {
+        color: white;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        padding-top: 20px;
+        margin-bottom: 10px;
+      }
+      #ItemAndInfo {
+        cursor: pointer;
+        margin: auto;
+        width: 92%;
+        height: 70%;
+        background-color: #cccccc;
+        border: 0.5px splid #cccccc;
+        display: flex;
+        padding-top: 17px;
+      }
+      #newImgDiv {
+        width: 285px;
+        height: 285px;
+        border-radius: 50%;
+        /* border: 1px solid red; */
+        margin-left: 140px;
+        /* margin-top: 20px; */
+      }
+      #infoDiv {
+        width: 52%;
+        height: 270px;
+        /* border: 1px solid red; */
+        margin-left: 120px;
+      }
+      #headline{
+      margin-left: 335px;
+      margin-top: 38px;
+      font-family: sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      }
+      #Headline{
+      margin-left: 335px;
+      margin-top: 38px;
+      font-family: sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      }
+      #information{
+      font-family: sans-serif;
+      font-size: 17.5px;
+      font-weight: 500;
+      line-height: 24px;
+      margin-bottom: 10px;
+      }
+      #Information{
+      font-family: sans-serif;
+      font-size: 17.5px;
+      font-weight: 500;
+      line-height: 24px;
+      margin-bottom: 10px;
+      }
+      #shopbtn{
+        width: 130px;
+        height: 19px;
+        background-color: red;
+        padding: 3px;
+        border-radius: 10px;
+        margin-left: 330px;
+      }
+      #Shopbtn{
+        width: 130px;
+        height: 19px;
+        background-color: red;
+        padding: 3px;
+        border-radius: 10px;
+        margin-left: 330px;
+      }
+      #shopText{
+        color: white;
+        font-family: sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      margin-left: 30px;
+      margin-top: 3px;
+      }
+      #ShopText{
+        color: white;
+        font-family: sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      margin-left: 30px;
+      margin-top: 3px;
+      }
+      #topWireless{
+        color: white;
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 15px;
+        margin-bottom: 20px;
+      }
+      #topWirelessItem{
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: 443px 443px 443px;
+        grid-template-rows: 100% 100% 100%;
+        grid-column-gap: 10px;
+        width: 90%;
+        height: 487px;
+        margin: auto;
+        /* border: 1px solid red; */
+        margin-top: 20px;
+        color: white;
+      }
+      #topWired{
+        color: white;
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 60px;
+        margin-bottom: 20px;
+      }
+      #topWiredItem{
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: 443px 443px 443px;
+        grid-template-rows: 100% 100% 100%;
+        grid-column-gap: 10px;
+        width: 90%;
+        height: 475px;
+        margin: auto;
+        /* border: 1px solid red; */
+        margin-top: 20px;
+        color: white; 
+        margin-bottom: 90px;
+      }
+     
+      #hardikKayra{
+        display: flex;
+      }
+      #hardik{
+        position: relative;
+        width: 50%;
+        height: 410px;
+        /* border: 1px solid blue; */
+        background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Sports_1512x.jpg?v=1605624529");
+        background-size: cover;
+    }
+    #ht{
+      display: block;  
+      color: white;
+      font-family: sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      margin-left: 330px;
+      margin-top: 320px;
+      }
+    .image_overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      opacity: 0;
+      transition: opacity 350ms;
+    }
+    .image_overlay:hover{
+      opacity: 1;
+    }
+    #harTitle{
+      cursor: pointer;
+        /* display: none; */
+      font-size: 30px;
+      font-weight: 600;
+      }
+      .harDes{
+        cursor: pointer;
+      }
+    #harDes1{
+        /* display: none; */
+      font-size: 18.2px;
+      font-weight: 500;
+       }
+       #harDes2{
+         /* display: none; */
+      font-size: 18.2px;
+      font-weight: 500;
+      margin-top: -12px;
+      margin-left: 230px;
+       }
+     
+      #kayra{
+        position: relative;
+        width: 50%;
+        height: 328px;
+        /* border: 1px solid white; */
+        background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Fashion_1512x.jpg?v=1605624529");
+        background-size: cover;
+      }
+      #kt{
+      display: block;  
+      color: white;
+      font-family: sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      margin-left: 320px;
+      margin-top: 258px;
+      }
+    .kimage_overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      opacity: 0;
+      transition: opacity 350ms;
+    }
+    .kimage_overlay:hover{
+      opacity: 1;
+    }
+    #kayTitle{
+      cursor: pointer;
+        /* display: none; */
+      font-size: 30px;
+      font-weight: 600;
+      }
+      .kayDes{
+        cursor: pointer;
+      }
+    #kayDes1{
+        /* display: none; */
+      font-size: 18.2px;
+      font-weight: 500;
+       }
+      #paRaKa{
+        display: flex;
+      }
+      #paji{
+        position: relative;
+        width: 50%;
+        height: 410px;
+        /* border: 1px solid blue; */
+        background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Travel_1512x.jpg?v=1605624529");
+        background-size: cover;
+      }
+      #pt{
+      display: block;  
+      color: white;
+      font-family: sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      margin-left: 330px;
+      margin-top: 320px;
+      }
+    .pimage_overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      opacity: 0;
+      transition: opacity 350ms;
+    }
+    .pimage_overlay:hover{
+      opacity: 1;
+    }
+    #pajiTitle{
+      cursor: pointer;
+        /* display: none; */
+      font-size: 30px;
+      font-weight: 600;
+      margin-top: 40px;
+      }
+      .pajiDes{
+        cursor: pointer;
+      }
+    #pajiDes1{
+        /* display: none; */
+      font-size: 18.2px;
+      font-weight: 500;
+       }
+       #pajiDes2{
+         /* display: none; */
+      font-size: 18.2px;
+      font-weight: 500;
+      margin-top: -12px;
+      margin-left: 270px;
+       }
+      #rahulImgDiv{
+      /* position: relative; */
+      width: 25%;
+      height: 492px;
+      /* border: 1px solid red; */
+      margin-top: -521.5px;
+      background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Affordable_cbbe72cb-075e-425a-8582-483a849ab8d6_720x.jpg?v=1640170618");
+        background-size: cover;
+        /* border:0.1px solid black; */
+        margin-left: 759px;
+      }
+      #rahulQuote{
+      display: block;  
+      color: white;
+      font-family: sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      margin-left: 50px; 
+       padding-top: 410px;
+      }
+      .rahulimage_overlay{
+      position: absolute;
+      top: 746.2%;
+      left: 50%;
+      width: 25%;
+      height:69.8%;
+      background: rgba(0,0,0,0.8);
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      opacity: 0;
+      transition: opacity 350ms;
+    }
+    .rahulimage_overlay:hover{
+      opacity: 1;
+    }
+     #rahulTitle{
+       cursor: pointer;
+      font-size: 30px;
+      font-weight: 600;
+      color: white;
+      margin-top: 58px;
+      /* margin-left: 57px; */
+      }
+      .rahulDes{
+        cursor: pointer;
+      }
+    #rahulDes1{
+      font-size: 18.2px;
+      font-weight: 500;
+      color: white;
+      /* margin-left: 2px; */
+      margin-top: 13px;
+       }
+       #rahulDes2{
+      font-size: 18.2px;
+      font-weight: 500;
+      color: white;
+      margin-top:-12px;
+      margin-left: 60px;
+       } 
+      #kartik{
+        position: relative;
+        width: 25%;
+      height: 492px;
+      /* border: 1px solid red; */
+      margin-top: -522px;
+      margin-left: 1139.5px;
+      background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/WFH_720x.jpg?v=1605624529");
+        background-size: cover;
+      }
+      #kartikQuote{
+      display: block;  
+      color: white;
+      font-family: sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      margin-left: 153px; 
+       padding-top: 410px;
+      }
+   
+      .kartikimage_overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height:100%;
+      background: rgba(0,0,0,0.8);
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      opacity: 0;
+      transition: opacity 350ms;
+    } 
+    .kartikimage_overlay:hover{
+      opacity: 1;
+    } 
+     #kartikTitle{
+       cursor: pointer;
+      font-size: 30px;
+      font-weight: 600;
+      color: white;
+      margin-top: 55px;
+      margin-left: -7px;
+      }
+      .kartikDes{
+        cursor: pointer;
+      }
+    #kartikDes1{
+      font-size: 18.2px;
+      font-weight: 500;
+      color: white;
+      margin-left: 37px;
+      margin-top: 13px;
+       }
+       #kartikDes2{
+      font-size: 18.2px;
+      font-weight: 500;
+      color: white;
+      margin-top:-12px;
+      margin-left: 25px;
+       }
+       #kartikDes3{
+      font-size: 18.2px;
+      font-weight: 500;
+      color: white;
+      margin-top:-12px;
+      margin-left: 26px;
+       }
+       #kartikDes4{
+      font-size: 18.2px;
+      font-weight: 500;
+      color: white;
+      margin-top:-12px;
+      margin-left: 150px;
+       }
+      /* #kayra>p{
+      color: white;
+      font-family: sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      margin-left: 320px;
+      margin-top: 250px;
+      } */
+      /* #paji>p{
+      color: white;
+      font-family: sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      margin-left: 330px;
+      margin-top: 330px;
+      } */
+      /* #RahulImg>p{
+      color: white;
+      font-family: sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      margin-left: 50px;
+      margin-top: 410px;
+      }
+      #kartik>p{
+      color: white;
+      font-family: sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      margin-left: 150px;
+      margin-top: 410px;
+      } */
+      #description_And_pic{
+        cursor: pointer;
+        width: 100%;
+        height: 465px;
+        /* border: 1px solid red; */
+        margin-top: 50px;
+        display: flex;
+      }
+      #description{
+        width: 59%;
+        height: 465px;
+        /* border: 1px solid red; */
+        background-color: #363636;
+      }
+      #pic{
+        width: 41%;
+        height: 465px;
+        /* border: 1px solid blue; */
+        margin-right: 20px;
+      }
+      #headtitle{
+        font-family: sans-serif;
+      font-size: 50px;
+      font-weight: 700;
+      margin-left: 40px;
+      margin-top: 110px;
+      color: red; 
+      }
+      #line{
+        margin-left: 40px;
+        margin-top: -32px;
+      }
+      #name{
+      margin-left: 40px; 
+      color: red; 
+      margin-top: 20px;
+      }
+      #first{
+        font-family: sans-serif;
+      font-size: 22px;
+      font-weight:lighter;
+      }
+      #last{
+        font-family: sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      margin-left: 8px;
+      }
+      #subTitle{
+      margin-left: 40px;
+      color: white;
+      font-family: sans-serif;
+      font-size: 23px;
+      font-weight: 700;
+      margin-top: -10px;
+      }
+      #des{
+        margin-left: 40px;
+      color: #9b9b9b;
+      font-family: sans-serif;
+      font-size: 18.2px;
+      font-weight:500; 
+      line-height:25.6px;
+      margin-top: -6px;
+      }
+      #boAtBlog{
+        color: white;
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 40px;
+        margin-bottom: 20px;  
+      }
+      #boAtBlogItem{
+        display: grid;
+        grid-template-columns: repeat(3,32%);
+        grid-column-gap: 31px;
+        margin-left: 160px;
+        width: 78%;
+        height: 350px;
+        /* border: 1px solid red; */
+      }
+      #imgInfo{
+        cursor: pointer;
+      color: white;
+      font-family: Montserrat, sans-serif;
+        font-size: 21px;
+        font-weight: 600;  
+        margin-top: 13px;
+      }
+      #imgInfo:hover{
+        color: red;
+      }
+      #readMore{
+        cursor: pointer;
+        height: 15px;
+        width: 75px;
+        padding: 8px;
+        border: 1px solid red;
+        border-radius: 5px;
+        color: white;
+        font-family: sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        padding-left: 13px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        margin-top: 60px;
+      }
+      #redLine{
+        margin-top: 20px;
+      }
+      #whatSay{
+        color: white;
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-bottom: 80px 
+      }
+      #whatSayItem{
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: repeat(3,32.8%);
+        grid-column-gap: 13px;
+        margin-left: 65px;
+        width: 92%;
+        height: 500px;
+        /* border: 1px solid red;  */
+      }
+   
+      #whatSay1ImgDiv{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        /* border: 1px solid white; */
+      }
+      #whatSay1ImgDiv>img{
+        margin-top: -50px;
+      }
+      #whatSay1TextDiv{
+      width: 100%;
+      height: 380px;
+      background-color: #eb2128;
+      margin-top: -200px;
+      }
+      #whatSay2ImgDiv{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        /* border: 1px solid white; */
+      }
+      #whatSay2ImgDiv>img{
+        margin-top: -70px;
+      }
+      #whatSay2TextDiv{
+      width: 100%;
+      height: 380px;
+      background-color: #eb2128;
+      margin-top: -200px;
+      }
+      #whatSay3ImgDiv{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        /* border: 1px solid white; */
+      }
+      #whatSay3ImgDiv>img{
+        margin-top: -60px;
+      }
+      #whatSay3TextDiv{
+      width: 100%;
+      height: 380px;
+      background-color: #eb2128;
+      margin-top: -200px;
+      }
+      #quote{
+       font-family: sans-serif;
+       font-size: 18px;
+       font-weight: 600;
+       color: white; 
+       margin-left: 30px;
+       padding-top: 200px;
+      }
+      #qname{
+        font-family: sans-serif;
+       font-size: 14px;
+       font-weight: 500;
+       color: white; 
+       margin-left: 170px; 
+       margin-top: 30px;
+      }
+      #shopNow{
+        font-family: sans-serif;
+       font-size: 12.5px;
+       font-weight: 700;
+        width: 95px;
+        height: 10px;
+        padding-top: 7px;
+        padding-bottom: 8px;
+        padding-left: 23px;
+        border-radius: 30px;
+        background-color: white;
+        color: black;
+        margin-left: 157px; 
+        margin-top: 50px;
+      }
+      #quote2{
+       font-family: sans-serif;
+       font-size: 18px;
+       font-weight: 600;
+       color: white; 
+       margin-left: 85px;
+       padding-top: 200px;
+      }
+      #InthePress{
+        color: white;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 40px;
+        margin-bottom: 45px   
+      }
+    #comma{
+     margin-left: 740px; 
+    }
+    #commaLine{
+      color: white;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 21px;
+        font-weight: 500;
+        /* margin-top: 40px;
+        margin-bottom: 45px    */
+    }
+    #logos{
+      cursor: pointer;
+      display: grid;
+      grid-template-columns: repeat(5, 231px);
+      grid-column-gap: 50px;
+      margin-top: 110px;
+      margin-left: 90px;
+    }
+    #hash{
+      width: 58%;
+      height: 570px;
+      margin-top: 60px;
+      margin-left: 320px;
+      /* border: 1px solid red; */
+      /* margin-bottom: 20px; */
+    }
+    .brandLine{
+      color: white;
+        background-color: black;
+        /* border: 1px solid red; */
+        width: 100%;
+        margin-top: -10px;
+        display: flex;
+        overflow: hidden;
+    }
+      .brandLine > p {
+        animation: scroll 110s linear infinite;
+        font-family: sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+      @keyframes scroll {
+        0% {
+          transform: translateX(1380px);
+        }
+        100% {
+          transform: translateX(-2600%);
+        }
+      }
+
+      .brandLine > p:nth-child(1) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        /* margin-left: 15px; */
+        margin-right: 15px;
+      }
+      .brandLine > p:nth-child(3) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+         /* margin-left: 15px; */
+         margin-right: 15px; 
+      }
+      .brandLine > p:nth-child(4) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        /* margin-left: 15px; */
+        margin-right: 15px;
+      }
+      .brandLine > p:nth-child(6) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+         /* margin-left: 15px; */
+        margin-right: 15px;
+      }
+      .brandLine > p:nth-child(7) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        /* margin-left: 15px; */
+        margin-right: 15px;
+      }
+      .brandLine > p:nth-child(8) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        /* margin-left: 15px;  */
+         margin-right: 15px;
+      }
+      .brandLine > p:nth-child(9) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        /* margin-left: 15px;  */
+         margin-right: 15px;
+      }
+      .brandLine > p:nth-child(11) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        /* margin-left: 15px; */
+        margin-right: 15px;
+      }
+      .brandLine > p:nth-child(12) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        /* margin-left: 15px;  */
+         margin-right: 15px;
+      }
+      .brandLine > p:nth-child(13) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        /* margin-left: 15px;  */
+         margin-right: 15px;
+      }
+      .brandLine > p:nth-child(15) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+         /* margin-left: 15px; */
+        margin-right: 15px; 
+      }
+      .brandLine > p:nth-child(16) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+         /* margin-left: 15px;  */
+         margin-right: 15px; 
+      }
+      .brandLine > p:nth-child(17) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+         /* margin-left: 15px;  */
+         margin-right: 15px; 
+      }
+      .brandLine > p:nth-child(18) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+         /* margin-left: 15px;  */
+         margin-right: 15px; 
+      }
+      .brandLine > p:nth-child(19) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        /* margin-left: 15px;  */
+         margin-right: 15px;
+      }
+      .brandLine > p:nth-child(21) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+         /* margin-left: 15px; */
+        margin-right: 15px; 
+      }
+      .brandLine > p:nth-child(22) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+         /* margin-left: 15px;  */
+         margin-right: 15px; 
+      }
+      .brandLine > p:nth-child(24) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+         /* margin-left: 15px; */
+        margin-right: 15px; 
+      }
+      .brandLine > p:nth-child(25) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+         /* margin-left: 15px;  */
+         margin-right: 15px; 
+      }
+      .brandLine > p:nth-child(26) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+         /* margin-left: 15px;  */
+         margin-right: 15px; 
+      }
+      .brandLine > p:nth-child(2) {
+        margin-right: 15px;
+      }
+      .brandLine > p:nth-child(5) {
+        margin-right: 15px;
+      }
+      .brandLine > p:nth-child(10) {
+        margin-right: 15px;
+      }
+      .brandLine > p:nth-child(14) {
+        margin-right: 15px;
+      }
+      .brandLine > p:nth-child(20) {
+        margin-right: 15px;
+      }
+      .brandLine > p:nth-child(23) {
+        margin-right: 15px;
+      }
+      #freeExclusiveSecure{
+        display: grid;
+        grid-template-columns: repeat(3,220px);
+        grid-template-rows: repeat(3,28px);
+        grid-column-gap: 100px;
+        width: 76.3%;
+        height: 58px;
+        background-color: #1c1c1c;
+        padding-left: 360px;
+        padding-top: 17px;
+      }
+      #free{
+        /* border: 1px solid red; */
+        color: white;
+        display: flex;
+       
+      }
+      #exclusive{
+        /* border: 1px solid red; */
+        color: white;
+        display: flex;
+      }
+      #secure{
+        /* border: 1px solid red; */
+        color: white;
+        display: flex;
+      }
+      #free>p{
+        margin-left: 15px;
+        margin-top: 4px;
+        font-family: sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+      }
+      #exclusive>p{
+        margin-left: 15px;
+        margin-top: 4px;
+        font-family: sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+      }
+      #secure>p{
+        margin-left: 15px;
+        margin-top: 4px;
+        font-family: sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+      }
+      #sentence{
+        width: 100%;
+        height: 70px;
+        background-color: #2c2c2c;
+        margin-top: -16px;
+      }
+      #sentence>p{
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        line-height:3px;
+        /* color: #708188; */
+        color: #79797b;
+      }
+      #sentence>p:nth-child(1) {
+        padding-top: 27px;
+      }
+      #boatImg{
+        width: 100px;
+        height: 45px;
+        margin-top: 40px;
+        /* margin-left: 160px; */
+      }
+      #boatImg:hover{
+        cursor: pointer;
+        opacity: 0.7;
+      }
+      #footer{
+        display: flex;
+      }
+      #leftDiv>p{
+       color: #969696;
+       font-family: sans-serif;
+        font-size: 14px;
+        font-weight: 400; 
+        margin-top: 30px;
+      }
+      #inputAndBtn{
+        display: flex;
+      }
+      #inputAndBtn input{
+      background-color: black;
+      color: whitesmoke; 
+      padding: 8px;
+      padding-left: 12px;
+      border: 1px solid #969696; 
+      width: 200px;
+      border-radius: 5px;
+      font-size: 13.33px;
+      font-weight: 400;
+      font-family: Arial;
+      }
+      #inputAndBtn button{
+        cursor: pointer;
+        color: white;
+        border: 1.5px solid red;
+        padding: 8px 10px 8px 10px;
+        border-radius: 5px;
+        width: 120px;
+        height: 35px;
+        margin-left: 3px;
+      }
+      #inputAndBtn button:hover{
+        background-color: red;
+      }
+      #leftDiv{
+       width: 360px;
+       height: 550px;
+       /* border: 1px solid red; */
+       margin-left: 160px; 
+      }
+      #rightDiv{
+        display: flex;
+        width: 800px;
+        height: 550px;
+        margin-left: 40px;
+        /* border: 1px solid red; */
+      }
+      #shopHelpComp{
+        display: flex;
+      }
+      #shopfoot{
+        width: 190px;
+        height: 350px;
+        /* border: 1px solid blue; */
+        margin-top: 40px;
+      }
+      #shopfoot>ul>li{
+        cursor: pointer;
+      }
+      #help{
+        width: 190px;
+        height: 350px;
+        /* border: 1px solid blue; */
+        margin-top: 40px;
+        margin-left: 60px;
+      }
+      #help>ul>li{
+        cursor: pointer;
+      }
+      #company{
+        width: 190px;
+        height: 350px;
+        /* border: 1px solid blue; */
+        margin-top: 40px;
+        margin-left: 60px;
+      }
+      #company>ul>li{
+        cursor: pointer;
+      }
+      #shopfoot>p,#help>p,#company>p{
+      font-size: 17px;
+      font-family: sans-serif;
+      font-weight: 600;
+      color: white;  
+      margin-top: 0px;
+      }
+      #shopfoot>ul>li,#help>ul>li,#company>ul>li{
+        color: #969696;
+        font-size: 14px;
+      font-family: sans-serif;
+      font-weight: 400;
+      line-height: 26px;
+      margin-left: -38px;
+      }
+      #shopfoot>ul>li:nth-child(1),#help>ul>li:nth-child(1),#company>ul>li:nth-child(1){
+        margin-top: -7px;
+      }
+      #SocialIcons{
+        display: flex;
+        /* border: 1px solid red; */
+        margin-top: 230px;
+      }
+      #twit{
+        width: 28px;
+        height: 28px;
+        /* border: 1px solid blue; */
+        margin-top: 5px;
+      }
+      #fac{
+        width: 38px;
+        height: 38px;
+        /* border: 1px solid blue; */
+      }
+      #yout{
+        width: 37px;
+        height: 37px;
+        /* border: 1px solid blue; */
+      }
+      #insta{
+        width: 32px;
+        height: 32px;
+        /* border: 1px solid blue;  */
+        margin-top: 3px;
+      }
+      #linkdin{
+        width: 23px;
+        height: 23px;
+        /* border: 1px solid blue; */
+        margin-top: 7px;
+      }
+      #Foot_cards{
+        width: 360px;
+        /* height: 40px; */
+        /* border: 1px solid red; */
+        margin-top: 20px;
+      }
+      #fstore{
+        display: flex;
+        width: 600px;
+        height: 50px;
+        /* border: 1px solid red; */
+        margin-left: 680px;
+        margin-top: -56px;
+      }
+      #fstore>p{
+        color: white;
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        margin-right: 28px;
+      }
+      #gstore{
+        margin-right: 10px;
+      }
+      #copyRight{
+        font-family: sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+        color: whitesmoke;
+      }
+      #giftHover{
+        display: none;
+       font-family: sans-serif;
+       color: whitesmoke;
+       font-size: 13.3px;
+       font-weight: 400;
+       margin-left: -124px;
+       margin-top: 60px;
+      }
+      #myAccHover{
+        display: none;
+       font-family: sans-serif;
+       color: whitesmoke;
+       font-size: 13.5px;
+       font-weight: 400;
+       margin-left: -75px;
+       margin-top: 60px;  
+      }
+      #cartHover{
+        display: none;
+       font-family: sans-serif;
+       color: whitesmoke;
+       font-size: 13.7px;
+       font-weight: 400;
+       margin-left: -29px;
+       margin-top: 60px; 
+      }
+   
+       #cartPage{
+         display: none;
+         position: absolute;
+         height: 710px;
+         width: 444px;
+         background-color: white;
+        margin-left: 1075px;    
+        margin-top: -107px;      
+       }
+       .headCart{
+       width: 100%px;
+       height: 45px;
+       background-color: #ea2127;
+       margin-top: -12px;
+      
+       }
+       .headCart>p{
+      font-family: sans-serif;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: white;
+      margin-left: 25px;
+      padding-top: 7px;
+      letter-spacing:1.2px;
+       }
+       .headCart>p:nth-child(2){
+        font-family: sans-serif;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: white; 
+      text-align: center;
+      letter-spacing:1.2px;
+      margin-top: -17px;
+       }
+       #totalDiv{
+         width: 100%;
+         height: 54px;
+         background-color: #f9f9f9;
+         display: flex;
+       }
+       #backImg{
+       width: 9px;
+       height: 15px;  
+       margin-left: 10px;
+       margin-top: 20px;
+       }
+       #backImg:hover{
+         cursor: pointer;
+       }
+       #yourCart{
+        font-family: sans-serif;
+      font-size: 16px;
+      font-weight: 700;  
+      margin-top: 19px;
+      margin-left: 10px;
+       }
+       #total{
+        font-family: sans-serif;
+      font-size: 16px;
+      font-weight: 400;  
+      color: #828282;
+      margin-top: 18px;
+      margin-left: 10px;
+       }
+       #cartproduct{
+       width:100%;
+       height: 260px;
+       /* border: 1px solid red; */
+       overflow:auto
+       }
+       #cartItemDiv{
+         display: flex;
+         border-bottom: 2px solid gainsboro;
+         height: 130px;
+         width: 99%;
+       }
+       #ImageDiv{
+         width: 50px;
+       }
+       #DescriptionDiv{
+         /* border: 1px solid blue; */
+         margin-left: 90px;
+       }
+       #Ctitle{
+        font-family:Montserrat, sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 15px;
+        margin-top: 20px;
+       }
+       #priceAndOff{
+         display: flex;
+         margin-top:15px ;
+         /* border: 1px solid green; */
+       }
+       #Cprice{
+         
+        font-family:Montserrat, sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 13.26px;
+        /* border: 1px solid red; */
+        width: 80px;
+       }
+       #Coff{
+       
+         width: 48px;
+         padding-left: 4px;
+         padding-top: 2px;
+         padding-bottom: 2px;
+         border-radius: 3px;
+         margin-left: 10px;
+         /* background-color: red; */
+         color: white;
+        font-family:Montserrat, sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 13.26px;
+       }
+       #QuantityDiv{
+         display: flex;
+         /* border: 1px solid red; */
+         margin-top: 10px;
+       }
+       #Count{
+         margin-left: 7px;
+         margin-right: 7px;
+         
+         font-family:Montserrat, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 25.6px;
+       }
+       #decrease{
+         cursor: pointer;
+         text-align: center;
+      
+         font-size: 20px;
+         font-weight: 700;
+         color: red;
+         width: 20px;
+         height: 20px;
+         border-radius: 10px;
+         border: 1px solid black;
+       }
+       #increase{
+         cursor: pointer;
+         text-align: center;
+         padding-top: 2px;
+         font-size: 14px;
+         font-weight: 700;
+         color: red;
+         width: 20px;
+         height: 18px;
+         border-radius: 10px;
+         border: 1px solid black;
+       }
+       #deleteDiv{
+         /* border: 1px solid red; */
+         cursor: pointer;
+         height: 30px;
+         width: 25px;
+         margin-top: 50px;
+         margin-left: 35px;
+       }
+       #bottomLine{
+         width: 100%;
+         height: 5px;
+         background-color: #e8e7e7;
+       }
+       #promoTxt{
+         margin-left: 20px;
+         font-family: sans-serif;
+      font-size: 16.3px;
+      font-weight: 800; 
+      margin-top: 10px;
+       }
+       #enterPromo{
+         margin-left: 20px;
+         margin-top: 2px;
+         width: 280px;
+         height: 30px;
+         font-family: sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+       }
+       #enterPromo:focus{
+         outline: none;
+       }
+       #apply{
+         width: 77px;
+         height: 34px;
+         background-color: white;
+         color: black;
+         font-family: sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      margin-left: 40px;
+      border: 1px solid gray;
+      padding-top: 8px;
+      padding-left: 19px;
+       }
+       #apply:hover{
+         background-color: red;
+         color: white;
+         cursor: pointer;
+       }
+       #subtotal{
+         color: #271818;
+        font-family: sans-serif;
+      font-size: 17px;
+      font-weight: 500;  
+      display: flex;
+      margin-top: 11px;
+       }
+       #subtotal>p:nth-child(1) {
+        letter-spacing:0.4px;
+        margin-left: 20px;
+       }
+       #subtotal>p:nth-child(2) {
+        letter-spacing:0.4px;
+        margin-left: 256px;
+       }
+       #shipping{
+        color: #271818;
+        font-family: sans-serif;
+      font-weight: 500; 
+      display: flex;  
+      margin-top: -26px;
+       }
+       #shipping>p:nth-child(1) {
+        letter-spacing:0.4px;
+        margin-left: 20px;
+        font-size: 17px;
+       }
+       #shipping>p:nth-child(2) {
+        letter-spacing:0.4px;
+        margin-left: 274px;
+        font-size: 16px;
+       }
+       #contiShop{
+         text-align: center;
+         color: red;
+         font-family: sans-serif;
+      font-size: 18px;
+      font-weight: 700; 
+      margin-top: -2px;
+       }
+       #contiShop:hover{
+         text-decoration: underline;
+         cursor: pointer;
+       }
+       #cards{
+         margin: auto;
+         margin-top: -6px;
+         width: 90%;
+         height: 34px;
+         background-color: red;
+         color: white;
+         border-radius: 5px;
+         font-family: sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      padding-top: 15px; 
+      padding-left: 15px;
+       }
+       #cards:hover{
+         cursor: pointer;
+       }
+       #cash{
+         display: flex;
+         margin: auto;
+         margin-top: 12px;
+         width: 90%;
+         height: 34px;
+         border: 2px solid red;
+         color: black;
+         border-radius: 5px;
+         font-family: sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      padding-top: 15px; 
+      padding-left: 15px;
+       }
+       #cash>img{
+         width: 63px;
+         margin-left: 105px;
+         margin-right: 10px;
+         margin-top: -10px;
+       }
+       #cash:hover{
+         background-color: red;
+         color: white;
+         cursor: pointer;
+       }
+     
     </style>
   </head>
   <body>
     <div id="redstrip">
       GET FLAT 15% SITEWIDE* | CASH ON DELIVERY IS NOW LIVE
     </div>
+
     <div id="blackStrip">
       <img
         id="boat"
         src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x.png?v=1600753267"
       />
+
+      
       <div id="nav">
-        <div id="shop" class="ml">Shop</div>
+
+       <span class="outShopDiv">
+        <span id="shop" class="ml">Shop</span>
         <i class="down fas fa-angle-down"></i>
-        <div class="line"></div>
-        <div class="ml">Flat 15% off</div>
-        <div class="line"></div>
-        <div class="ml">Plug-In Sale</div>
-        <div class="line"></div>
-        <div id="more" class="ml">More</div>
+
+          <div id="shopDiv">
+            <div id="Fgrid">
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_01_540x.png?v=1602142415"
+                  height="185px"
+                  width="350px"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_02_540x.png?v=1602142415"
+                  height="185px"
+                  width="350px"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/New-Category-Banners_07_540x.png?v=1611569935"
+                  height="185px"
+                  width="350px"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_03_540x.png?v=1602142415"
+                  height="185px"
+                  width="350px"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_04_540x.png?v=1602142415"
+                  height="185px"
+                  width="350px"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_05_540x.png?v=1602142415"
+                  height="185px"
+                  width="350px"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_06_540x.png?v=1602142415"
+                  height="185px"
+                  width="350px"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Trebel_catgry_02_540x.png?v=1615033049"
+                  height="170px"
+                  width="350px"
+                />
+              </div>
+            </div>
+      
+            <div id="Tgrid">
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_08_540x.png?v=1602142415"
+                  height="185px"
+                  width="350px"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/MISFIT-shop_540x.png?v=1624859990"
+                  height="170px"
+                  width="350px"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Immortal_category_Image_540x.png?v=1626094103"
+                  height="170px"
+                  width="350px"
+                />
+              </div>
+            </div>
+          </div>
+        </span>
+
+      
+        <span class="line"></span>
+        <span class="ml">Flat 15% off</sp>
+        <span class="line"></span>
+        <span class="ml">Plug-In Sale</span>
+        <span class="line"></span>
+
+        <span class="moreHover">
+        <span id="more" class="ml">More</span>
         <i class="down fas fa-angle-down"></i>
+
+        <div id="moreOption">
+          <p>Gifting</p>
+          <p>Offer Zone</p>
+          <p>Float Your boAt</p>
+          <p>Meet the boAtheads</p>
+          <p>Earn Rs.100</p>
+        </div>
+      </span>
+
       </div>
-    
-        <i class="search fas fa-search"></i>
-        <input type="text" id="search" placeholder="        Search..." />
-        <img id="gift" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809" >
-        <img id="man" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/user_1.png?v=1606314823" > 
-        <img id="cartimg" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/cart.png?v=1606314839" >
-        
+     
+
+      <input
+        type="search"
+        id="search"
+        placeholder="       Search..."
+        value=""
+      />
+      <i class="search fas fa-search"></i>
+
+      <img
+        id="gift"
+        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809"
+      />
+      <img
+        id="man"
+        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/user_1.png?v=1606314823"
+      />
+      <img
+        id="cartimg"
+        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/cart.png?v=1606314839"
+      />
+      
+      <div id="cartItemCount">0</div>
+
+      <div id="loginPopUp">
+      <p id="x">&#215</p>
+      <p id="hiboAt">Hi boAthead!</p>
+      <div id="login"> Log in </div>
+      </div>
+
+      <p id="giftHover">Gift Cards</p>
+      <p id="myAccHover">My Account</p>
+      <p id="cartHover">Cart</p>
+
     </div>
-    <div id="cont1"></div>
-    <br>
-    <br>
-    <br>
-    <p id="title">Daily Deals</p>
+
+
+    <div id="cartPage">
+      <div class="headCart"> 
+      <p>Free Shipping sitewide | Cash On Delivery available for </p>
+      <p>order value upto ₹3000</p> 
+    </div>
+
+    <div id="totalDiv">
+      <div id="backImg"> <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Vector_246.png?v=1633775978" height="100%" width="100%"> </div>
+      <p id="yourCart">YOUR CART</p>
+      <p id="total">(0 items)</p>
+    </div>
+
+    <div id="cartproduct"></div>
+    <div id="bottomLine"></div>
+
+    <p id="promoTxt">PROMO CODE</p>
+    <input id="enterPromo" type="text" placeholder="Enter Coupon Code">
+    <button id="apply">Apply</button>
     
+    <div id="subtotal">
+      <p>Subtotal:</p>
+      <p id="csubT">Rs 0</p>
+    </div>
+
+    <div id="shipping">
+      <p>Shipping:</p>
+      <p>FREE</p>
+    </div>
+    
+    <p id="contiShop"> Continue Shopping > </p>
+  
+    <div id="cards">PAY VIA CREDIT/DEBIT CARD/OTHERS</div> 
+    <div id="cash">CASH ON DELIVERY/UPI
+      <img src="https://cdn.gokwik.co/v4/images/upi-icons.svg">
+      >
+    </div> 
+
+      </div>
+
+
+ 
+
+   
+
+    <div id="cont1"></div>
+
+    <div class="container">
+      <p>FLAUNT YOUR FITNESS</p>
+      <p>FLAUNT YOUR FITNESS</p>
+      <p>FLAUNT YOUR FITNESS</p>
+      <p>FLAUNT YOUR FITNESS</p>
+      <p>FLAUNT YOUR FITNESS</p>
+      <p>FLAUNT YOUR FITNESS</p>
+    </div>
+
+    <p id="title">Daily Deals</p>
     <div id="dailyDeal"></div>
+
+    <p id="trending">Trending in Earbuds</p>
+    <div id="trendingEarbuds">
+      <div>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Trending-Products_AD402_8766e3d3-617f-4f4e-bfa9-76cf511f1aee_1728x.png?v=1638270960"
+          height="100%"
+          width="100%"
+        />
+      </div>
+      <div>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Trending-Products_AD381_540x.png?v=1627887818"
+          height="100%"
+          width="100%"
+        />
+      </div>
+      <div>
+        <img
+          src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/621_540x.png?v=1633507618"
+          height="100%"
+          width="100%"
+        />
+      </div>
+    </div>
+
+    <p id="newlyLaunched">Newly Launched</p>
+    <div id="newlyLaunchedItem"></div>
+
+    <p id="smartWatches">Smart Watches</p>
+    <div id="smartWatchesItem"></div>
+
+    <div id="newlaunchesBox">
+      <p id="newlaunches">New Launches</p>
+      <div id="ItemAndInfo">
+        <div id="newImgDiv"></div>
+        <div id="infoDiv"></div>
+      </div>
+    </div>
+
+    <p id="topWireless">Top Wireless</p>
+    <div id="topWirelessItem"></div>
+
+    <p id="topWired">Top Wired</p>
+    <div id="topWiredItem"></div>
+
+    
+    <div id="hardikKayra">
+      <div id="hardik"> 
+        <p id="ht">Sports</p> 
+        <div class="image_overlay">
+        <div id="harTitle">Sports</div>
+        <div class="harDes">
+        <p id="harDes1">Water and sweat resistant, light and secure fit makes them ideal for outdoor </p>
+        <p id="harDes2">sports or workouts.</p>
+      </div> 
+      </div>
+       </div>
+
+      <div id="kayra"> 
+        <p id="kt">Fashion</p> 
+        <div class="kimage_overlay">
+        <div id="kayTitle">Fashion</div>
+        <div class="kayDes">
+        <p id="kayDes1">Designs that keep up with the latest trends with vibrant & unique colors. </p>
+      </div> 
+      </div>
+      </div>
+    </div>
+
+    <div id="paRaKa">
+      <div id="paji"> 
+        <p id="pt">Travel</p> 
+        <div class="pimage_overlay">
+        <div id="pajiTitle">Travel</div>
+        <div class="pajiDes">
+        <p id="pajiDes1"> Comfortable for long fights and drives with ergonomic, snug fit and long lasting</p>
+        <p id="pajiDes2">battery life</p>
+      </div> 
+      </div>
+      </div>
+      </div>
+
+      <div id="rahulImgDiv">
+       <p id="rahulQuote">All Time Favourites</p> 
+       <div class="rahulimage_overlay">
+       <div id="rahulTitle">All Time Favourites</div>
+       <div class="rahulDes">
+       <p id="rahulDes1">Your most favourites at the most</p>
+       <p id="rahulDes2">incredible prices.</p>
+     </div> 
+     </div>
+      </div>
+
+      <div id="kartik">
+         <p id="kartikQuote">WFH</p> 
+         <div class="kartikimage_overlay">
+         <div id="kartikTitle">WFH</div>
+         <div class="kartikDes">
+         <p id="kartikDes1">Comfortable ear wear suitable for</p>
+         <p id="kartikDes2">working from home, with battery life</p>
+         <p id="kartikDes3">that easily lasts an entire day full of</p>
+         <p id="kartikDes4">calls.</p>
+       </div> 
+       </div>
+         </div>
+    </div>
+
+
+    <div id="description_And_pic">
+      <div id="description"></div>
+      <div id="pic"></div>
+    </div>
+
+
+    <p id="boAtBlog">boAt Blog</p>
+    <div id="boAtBlogItem">
+      <div id="img1"></div>
+      <div id="img2"></div>
+      <div id="img3"></div>
+    </div>
+
+<div id="redLine"> <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/t/103/assets/horizontal-red-line.png?v=15851894390071166230"> </div>
+
+
+<p id="whatSay">What They Say About Us:</p>
+<div id="whatSayItem">
+  <div id="whatSay1"></div>
+  <div id="whatSay2"></div>
+  <div id="whatSay3"></div>
+</div>
+
+<p id="InthePress">In the Press</p>
+<div id="comma"> <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/quote.png?v=1610085078" width="30px" height="26px"> </div>
+<p id="commaLine">The Airdopes 441 is sweat proof and packs in crisp audio. Great for fitness enthusiasts.</p>
+
+<div id="logos">
+  <div> <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/mint.png?v=1610353880"> </div>
+  <div> <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Forbes_1.png?v=1610015636"> </div>
+  <div> <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/techradar_1.png?v=1610015636"> </div>
+  <div> <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/ET_1.png?v=1610015636"> </div>
+  <div> <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gadgets360_1.png?v=1610015636"> </div>
+</div>
+
+<div id="hash">
+  <div > <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Fotter-Awards_1080x.jpg?v=1633930093" height="100%" width="100%"> </div>
+</div>
+
+<div class="brandLine">
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+  <p>India's No.1 Earwear Audio Brand.</p>
+</div>
+
+
+<div id="freeExclusiveSecure">
+  <div id="free">
+    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/group_186_3x_4616a7a4-8c24-4065-a237-54e3d574bb94.png?v=1611132367" height="100%" width="20%">
+    <p>Free Shipping</p>
+  </div>
+  <div id="exclusive">
+    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/vector_3x_50a1233e-95d9-4e18-9e8e-757b545e2c06.png?v=1611132367" height="100%" width="14%">
+    <p>Exclusive Deals</p>
+  </div>
+  <div id="secure">
+    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/vector_2_2x_9d5071e2-154a-4f06-b660-9d0430a18248.png?v=1611132367" height="100%" width="14%">
+    <p>Secure Checkout</p>
+  </div>
+</div>
+
+<div id="sentence">
+  <p>India's fastest growing audio & wearables brand. The most incredible range of wireless earphones, earbuds, headphones, smart watches, and home</p>
+  <p>audio. From workouts to adventures, boAt will get you sailing!</p>
+</div>
+
+
+<div id="footer">
+<div id="leftDiv">
+<div id="boatImg"> <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x.png?v=1600753267" height="100%" width="100%"> </div>
+<p>Subscribe to email alerts. We promise not to spam your inbox.</p>
+<div id="inputAndBtn">
+  <input type="text" placeholder="Email Address*">
+  <button>SUBSCRIBE</button>
+</div>
+<div id="SocialIcons">
+  <div id="twit"> <img src="https://i.pinimg.com/236x/09/08/6b/09086b0598efbfd15c0b279d327d35ae.jpg" width="100%" height="100%"> </div>
+  <div id="fac"> <img src="https://pbs.twimg.com/media/EiipBHxXYAI84bz?format=jpg&name=360x360" width="100%" height="100%"> </div>
+  <div id="yout"> <img src="https://pbs.twimg.com/media/EidAjSXXsAA2lQR?format=jpg&name=360x360" width="100%" height="100%"> </div>
+  <div id="insta"> <img src="https://pbs.twimg.com/media/EidAfaHWAAAu7nX?format=jpg&name=360x360" width="100%" height="100%"> </div>
+  <div id="linkdin"> <img src="https://i.pinimg.com/236x/db/c3/94/dbc394d8c833cd0780797758a9ed264e.jpg" width="100%" height="100%"> </div>
+</div>
+<div id="Foot_cards">
+  <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Fotter_payment_icn_2_460x.png?v=1632725578" width="100%" height="100%">
+</div>
+</div>
+
+<div id="rightDiv"> 
+<div id="shopHelpComp"> 
+  <div id="shopfoot">
+    <p>SHOP</p>
+    <ul type="none">
+      <li>True Wireless Earbuds</li>
+      <li>Wireless Headphones</li>
+      <li>Wired Headphones</li> 
+      <li>Wireless Speakers</li>
+      <li>Home Audio</li>
+      <li>Mobile Accesories</li>
+      <li>Smart Watches</li>
+      <li>TRebel</li>
+      <li>Misfit</li>
+      <li>Gift Card</li>
+      <li> Rock IN India</li>
+      <li>Earn Rs.100</li>
+    </ul>
+  </div>
+  <div id="help">
+    <p>HELP</p>
+    <ul type="none">
+      <li>Track Your Order</li>
+      <li>Warranty & Support</li>
+      <li>Return Policy</li>
+      <li>Service Centers</li>
+      <li>Bulk Orders</li>
+      <li>FAQ's</li>
+      <li>Why Buy Direct</li>
+    </ul>
+  </div>
+  <div id="company">
+    <p>COMPANY</p>
+    <ul type="none">
+      <li>About boAt</li>
+      <li>News</li>
+      <li>Read Our Blog</li>
+      <li>High5boAtheads</li>
+      <li>Our Partners</li>
+      <li>Terms of Service</li>
+      <li>Privacy Policy</li>
+      <li>Partner Offers T&Cs</li>
+    </ul>
+  </div>
+</div>
+</div>
+
+</div>
+
+<div id="fstore">
+  <p>DOWNLOAD THE APP</p>
+  <div id="gstore"> <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/google-play.png?v=1608620293" width="100%" height="100%"> </div>
+  <div id="astore"> <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/app-store.png?v=1608620293" width="100%" height="100%"> </div>
+</div>
+
+<p id="copyRight">© 2022 Imagine Marketing Private Limited. All Rights Reserved.</p>
+
   </body>
 </html>
 
 
 
 
+
+
+
 <script>
+  let cont1 = document.getElementById("cont1");
+  // cont1.style.border="1px solid red";
+  // cont1.style.display = "flex";
+  // cont1.style.gap = "2%";
+  // cont1.style.margin = "2% 2% 2% 2%";
+  let slide = document.createElement("div");
+  cont1.append(slide);
+  let slidedata = [
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/flat15_off_wbanner_2000X1000.jpg?v=1636526312",
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Zenit_wbanner_4a54a116-94ae-4471-b619-57a4577d8efe_2000X1000.jpg?v=1636625277",
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Xplorer-O2_wbanner_2000X1000.jpg?v=1636625365",
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/COD_web-Banner_2000X1000.jpg?v=1635237557",
+  ];
+  slide.style.width = "100%";
+  slide.style.height = "750px";
+  let inter;
+  function startSlide() {
+    let c = 0;
+    let img = document.createElement("img");
+    img.src = slidedata[c];
+    img.style.width = "100%";
+    img.style.height = "750px";
+    slide.append(img);
+    c++;
+    inter = setInterval(function () {
+      slide.innerHTML = null;
+      if (c == slidedata.length) {
+        c = 0;
+      }
+      let img = document.createElement("img");
+      img.src = slidedata[c];
+      img.style.width = "100%";
+      img.style.height = "750px";
+      slide.append(img);
+      c++;
+    }, 4000);
+  }
+  startSlide();
 
-let cont1 = document.getElementById("cont1");
-    // cont1.style.display = "flex";
-    // cont1.style.gap = "2%";
-    // cont1.style.margin = "2% 2% 2% 2%";
-    let slide = document.createElement("div");
-    cont1.append(slide);
-    let slidedata = [
-        "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/flat15_off_wbanner_2000X1000.jpg?v=1636526312",
-        "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Zenit_wbanner_4a54a116-94ae-4471-b619-57a4577d8efe_2000X1000.jpg?v=1636625277",
-        "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Xplorer-O2_wbanner_2000X1000.jpg?v=1636625365",
-        "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/COD_web-Banner_2000X1000.jpg?v=1635237557",
-    ]
-    slide.style.width = "100%";
-    slide.style.height = "810px";
-    let inter;
-    function startSlide(){
-        let c = 0;
-            let img = document.createElement('img')
-            img.src = slidedata[c];
-            img.style.width = "100%"
-            img.style.height = "810px"
-            slide.append(img);
-            c++;
-             inter = setInterval(function(){
-            slide.innerHTML = null;
-            if(c == slidedata.length){
-                c=0;
-            }
-            let img = document.createElement('img')
-            img.src = slidedata[c];
-            img.style.width = "100%"
-            img.style.height = "750px"
-            slide.append(img);
-            c++;
-        }, 4000)
-    }
-     startSlide();
+  // var products = JSON.parse(localStorage.getItem("addListProject"));
+  var products = [
+    {
+      name: "BOAT Rockerz 245 V2",
+      price: "999",
+      save: "66%",
+      chars: [
+        "IPX5 water and sweat resistant",
+        "Fast Charging",
+        "Integrated controls",
+      ],
+      image_url1:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_1_720x.png?v=1627276362",
+      image_url2:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IM1300_main_1_300x.png?v=1632715016",
+    },
+    {
+      name: "boAt Immortal 1300",
+      price: "2,299",
+      save: "76%",
+      chars: [
+        "Colour variants for every style",
+        "Fast Charge in just 15 minutes",
+        "Ace your workouts with IPX5 rating",
+      ],
+      image_url1:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IM1300_main_1_300x.png?v=1632715016",
+      image_url2:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_1_720x.png?v=1627276362",
+    },
+    {
+      name: "BassHeads 102",
+      price: "399",
+      save: "69%",
+      chars: [
+        "Lightweight & perfect fit",
+        "Thumping super extra bass",
+        "Tangle-free and comfortable for all-day use",
+      ],
+      image_url1:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-102-red_300x.png?v=1633152280",
+      image_url2:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_1_300x.png?v=1627276362",
+    },
+  ];
 
-
-
-
-  var products = JSON.parse(localStorage.getItem("addListProject"));
   // console.log(products);
   var mainDiv = document.getElementById("dailyDeal");
 
   displayProducts(products);
 
-  var cart = JSON.parse(localStorage.getItem("cartItemsProject")) || []; 
+  var cart = JSON.parse(localStorage.getItem("cartItemsProject")) || [];
 
- function displayProducts(products) {
+  function displayProducts(products) {
+    products.map(function (item) {
+      // console.log(item);
 
-  products.map(function(item) {
-  // console.log(item);
+      var imgDiv = document.createElement("div");
+      imgDiv.setAttribute("id", "prodDiv");
 
-  var imgDiv = document.createElement("div");
-  imgDiv.setAttribute("id","prodDiv");
+      var innerDiv = document.createElement("div");
+      innerDiv.setAttribute("id", "indiv");
 
-var innerDiv = document.createElement("div");
-innerDiv.setAttribute("id", "indiv");
+      var h3 = document.createElement("h3");
+      h3.textContent = item.name;
 
-  var h3 = document.createElement("h3");
-  h3.textContent = item.name;
+      var h4 = document.createElement("h4");
+      h4.textContent = "Rs. " + item.price;
 
-  var h4 = document.createElement("h4");
-  h4.textContent = "Rs. " + item.price;
+      var h5 = document.createElement("h5");
+      h5.textContent = "YOU SAVE " + item.save;
 
-  var h5 = document.createElement("h5");
-  h5.textContent = "YOU SAVE " + item.save;
+      var p1 = document.createElement("p");
+      p1.textContent = item.chars[0];
+      p1.setAttribute("id", "mt");
 
-  var p1 = document.createElement("p");
-  p1.textContent = item.chars[0];
-  p1.setAttribute("id", "mt");
+      var p2 = document.createElement("p");
+      p2.textContent = item.chars[1];
 
-  var p2 = document.createElement("p");
-  p2.textContent = item.chars[1];
+      var p3 = document.createElement("p");
+      p3.textContent = item.chars[2];
 
-  var p3 = document.createElement("p");
-  p3.textContent = item.chars[2];
+      var img1 = document.createElement("img");
+      img1.setAttribute("src", item.image_url1);
+      img1.setAttribute("id", img1);
+      innerDiv.append(h5, img1);
 
-  var img = document.createElement("img");
-  img.setAttribute("src",item.image_url);
+      var img2 = document.createElement("img");
+      img2.setAttribute("src", item.image_url2);
+      img2.setAttribute("id", img2);
 
-  var btn = document.createElement("button");
-  btn.textContent = "Shop Now";
-  btn.addEventListener("click",function () {
-      addToCart(item);
-  })
-  innerDiv.append(h5,img);
-  imgDiv.append(innerDiv,h3,h4,p1,p2,p3,btn);
-  mainDiv.append(imgDiv);
+      // img1.addEventListener("mouseenter",mouseIn);
+
+      // function mouseIn(event) {
+      //   console.log(event.target.parentNode.img);
+      //   // innerDiv.append(h5,img2);
+      // }
+
+      // img1.addEventListener("mouseleave",mouseOut);
+
+      // function mouseOut() {
+      //   console.log("hi");
+      //  img1.removeEventListener("mouseenter",mouseIn);
+      // }
+
+      var btn = document.createElement("button");
+      btn.textContent = "Add to Cart";
+      btn.addEventListener("click", function () {
+        addToCart(item);
+      
+      });
+
+      imgDiv.append(innerDiv, h3, h4, p1, p2, p3, btn);
+      mainDiv.append(imgDiv);
+    });
+
+  }
+
  
-  })
+  function addToCart(item) {
+      for (var i = 0; i < cart.length; i++) {
+        if (cart[i].name == item.name) {
+          return alert("Product is already in the cart");
+        }
+      }
+      cart.push(item);
+      localStorage.setItem("cartItemsProject", JSON.stringify(cart));
+    }
+
+
+  // document.getElementById("more").addEventListener("click", shop);
+
+  // function shop() {
+  //   window.location.href = "offerzone.html";
+  // }
+
+ 
+
+  var newlyLaunched = [
+    {
+      name: "boAt Airdopes 601 ANC",
+      price: "3999.00",
+      save: "59%",
+      chars: [
+        "Hybrid Active Noise Cancelling",
+        "Swipe gesture touch controls",
+        "28 hours playback",
+      ],
+      image_url1:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/601_1_300x.png?v=1641489474",
+      image_url2:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IM1300_main_1_300x.png?v=1632715016",
+    },
+    {
+      name: "boAt Airdopes 451v2",
+      price: "2,999.00",
+      save: "50%",
+      chars: [
+        "Dual mic with ENxTM Tech",
+        "In-ear detection",
+        "25 hours playback",
+      ],
+      image_url1:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/451v2_blue_300x.png?v=1641801490",
+      image_url2:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_1_720x.png?v=1627276362",
+    },
+    {
+      name: "boAt Watch Iris",
+      price: "4,999.00",
+      save: "58%",
+      chars: ["Amoled display", "1.39 inches display", "Health on the go"],
+      image_url1:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/mainblack_300x.png?v=1640237575",
+      image_url2:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_1_300x.png?v=1627276362",
+    },
+  ];
+
+  var newlyDiv = document.getElementById("newlyLaunchedItem");
+
+  displayNewlyLaunched(newlyLaunched);
+
+  function displayNewlyLaunched(newlyLaunched) {
+    newlyLaunched.map(function (item) {
+      // console.log(item);
+
+      var imgDiv = document.createElement("div");
+      imgDiv.setAttribute("id", "prodDiv");
+
+      var innerDiv = document.createElement("div");
+      innerDiv.setAttribute("id", "indiv");
+
+      var h3 = document.createElement("h3");
+      h3.textContent = item.name;
+
+      var h4 = document.createElement("h4");
+      h4.textContent = "Rs. " + item.price;
+
+      var h5 = document.createElement("h5");
+      h5.textContent = "YOU SAVE " + item.save;
+
+      var p1 = document.createElement("p");
+      p1.textContent = item.chars[0];
+      p1.setAttribute("id", "mt");
+
+      var p2 = document.createElement("p");
+      p2.textContent = item.chars[1];
+
+      var p3 = document.createElement("p");
+      p3.textContent = item.chars[2];
+
+      var img1 = document.createElement("img");
+      img1.setAttribute("src", item.image_url1);
+      img1.setAttribute("id", img1);
+      innerDiv.append(h5, img1);
+
+      var img2 = document.createElement("img");
+      img2.setAttribute("src", item.image_url2);
+      img2.setAttribute("id", img2);
+
+      // img1.addEventListener("mouseenter",mouseIn);
+
+      // function mouseIn(event) {
+      //   console.log(event.target.parentNode.img);
+      //   // innerDiv.append(h5,img2);
+      // }
+
+      // img1.addEventListener("mouseleave",mouseOut);
+
+      // function mouseOut() {
+      //   console.log("hi");
+      //  img1.removeEventListener("mouseenter",mouseIn);
+      // }
+
+      var btn = document.createElement("button");
+      btn.textContent = "Add to Cart";
+      btn.addEventListener("click", function () {
+        addToCart(item);
+      });
+
+      imgDiv.append(innerDiv, h3, h4, p1, p2, p3, btn);
+      newlyDiv.append(imgDiv);
+    });
+
+    function addToCart(item) {
+      for (var i = 0; i < cart.length; i++) {
+        if (cart[i].name == item.name) {
+          return alert("Product is already in the cart");
+        }
+      }
+      cart.push(item);
+      localStorage.setItem("cartItemsProject", JSON.stringify(cart));
+    }
+
+  }
+
+
+
+  var smartWatches = [
+    {
+      name: "boAt Watch Iris",
+      price: "4,999.00",
+      save: "58%",
+      chars: ["Amoled display", "1.39 inches display", "Health on the go"],
+      image_url1:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/mainblack_300x.png?v=1640237575",
+      image_url2:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_1_300x.png?v=1627276362",
+    },
+    {
+      name: "boAt Watch Mystiq",
+      price: "2,999.00",
+      save: "66%",
+      chars: [
+        "1.57 inch Display",
+        "Multi Sports Mode",
+        "Call, Text & Social Media Notifications",
+      ],
+      image_url1:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Black_2_300x.png?v=1639486284",
+      image_url2:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_1_720x.png?v=1627276362",
+    },
+    {
+      name: "boAt Watch Mercury",
+      price: "2,999.00",
+      save: "57%",
+      chars: [
+        "1.54 inch Display",
+        "Temperature monitoring",
+        "100+ cloud watch faces",
+      ],
+      image_url1:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Mercury-1_300x.png?v=1639400857",
+      image_url2:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_1_300x.png?v=1627276362",
+    },
+  ];
+
+  var smartWatchesDiv = document.getElementById("smartWatchesItem");
+
+  displaysmartWatchesItem(smartWatches);
+
+  function displaysmartWatchesItem(smartWatches) {
+    smartWatches.map(function (item) {
+      // console.log(item);
+
+      var imgDiv = document.createElement("div");
+      imgDiv.setAttribute("id", "prodDiv");
+
+      var innerDiv = document.createElement("div");
+      innerDiv.setAttribute("id", "indiv");
+
+      var h3 = document.createElement("h3");
+      h3.textContent = item.name;
+
+      var h4 = document.createElement("h4");
+      h4.textContent = "Rs. " + item.price;
+
+      var h5 = document.createElement("h5");
+      h5.textContent = "YOU SAVE " + item.save;
+
+      var p1 = document.createElement("p");
+      p1.textContent = item.chars[0];
+      p1.setAttribute("id", "mt");
+
+      var p2 = document.createElement("p");
+      p2.textContent = item.chars[1];
+
+      var p3 = document.createElement("p");
+      p3.textContent = item.chars[2];
+
+      var img1 = document.createElement("img");
+      img1.setAttribute("src", item.image_url1);
+      img1.setAttribute("id", img1);
+      innerDiv.append(h5, img1);
+
+      var img2 = document.createElement("img");
+      img2.setAttribute("src", item.image_url2);
+      img2.setAttribute("id", img2);
+
+      // img1.addEventListener("mouseenter",mouseIn);
+
+      // function mouseIn(event) {
+      //   console.log(event.target.parentNode.img);
+      //   // innerDiv.append(h5,img2);
+      // }
+
+      // img1.addEventListener("mouseleave",mouseOut);
+
+      // function mouseOut() {
+      //   console.log("hi");
+      //  img1.removeEventListener("mouseenter",mouseIn);
+      // }
+
+      var btn = document.createElement("button");
+      btn.textContent = "Add to Cart";
+      btn.addEventListener("click", function () {
+        addToCart(item);
+      });
+
+      imgDiv.append(innerDiv, h3, h4, p1, p2, p3, btn);
+      smartWatchesDiv.append(imgDiv);
+    });
+
+    function addToCart(item) {
+      for (var i = 0; i < cart.length; i++) {
+        if (cart[i].name == item.name) {
+          return alert("Product is already in the cart");
+        }
+      }
+      cart.push(item);
+      localStorage.setItem("cartItemsProject", JSON.stringify(cart));
+    }
+
+  }
+
+
+
+  let newImgDiv = document.getElementById("newImgDiv");
+  
+  // cont1.style.border="1px solid red";
+  // cont1.style.display = "flex";
+  // cont1.style.gap = "2%";
+  // cont1.style.margin = "2% 2% 2% 2%";
+  let slider = document.createElement("div");
+  newImgDiv.append(slider);
+  let slideData = [
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/NEWLAUNCH_360x.png?v=1640240393",
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Untitled-2_360x.jpg?v=1641805643",
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Untitled-11_360x.png?v=1641542905",
+  ];
+  slider.style.width = "100%";
+  slider.style.height = "100%";
+
+  let infoDiv = document.getElementById("infoDiv");
+  let headData = ["WATCH IRIS", "AIRDOPES 601 ANC", "AIRDOPES 451V2"];
+  let infoData = [
+    "Optimists! Watch Iris is here to get up you and running through the week with a 7-day battery backup. For the people who see the world in color and not in black in white, choose from multiple watch faces to go with your outfit of the day. With IP68 sweat, splash and dust resistance ace every sport you play in 8 different sports modes. Strive for a better performance. Switch over to the bright side!",
+    "Cut the cutter with Airdopes 601 ANC which suppresses upto 30 dB of noise so you can hear #SoundThatMatters. Its humongous playback of 28HRS can get you through the day without any worries. For all the binge buddies out there, you just need to change for 5MINS to get it up and running for another 60MINS of audio bliss. Airdopes 601 ANC can also be your work from home partner. It gives an unmatched calling experience in its class with 4 Mics and ENxTM Technology that silences the noise around and empowers you to listen to the sound that matters-yours.",
+    "Pave the way your limited edition groovin' partner is right here! Be heard loud and clear as Airdopes 451v2 is equipped with Dual Mic with ENx Technology! Get 25 hours of powerful playback to fuel your vibing sessions! Power with 10mm drivers & IPX7 Rain & Water Shield, Airdopes 451v2 is all you need. So, never stop groovin'",
+  ];
+
+
+  let interval;
+  function start_Slide() {
+    let i = 0;
+    let img1 = document.createElement("img");
+    img1.src = slidedata[i];
+    img1.style.width = "100%";
+    img1.style.height = "100%";
+    img1.style.borderRadius = "50%";
+    slider.append(img1);
+    i++;
+
+    
+    let j = 0;
+    let head = document.createElement("div");
+    head.setAttribute("id","headline");
+    head.innerText = headData[j];
+    
+
+    let k = 0;
+    let info = document.createElement("div");
+    info.innerText = infoData[k];
+    info.setAttribute("id","information");
+  
+
+    let shopNowBtn = document.createElement("div");
+    shopNowBtn.setAttribute("id","shopbtn");
+     let text = document.createElement("p");
+     text.innerText = "Add to Cart";
+     text.setAttribute("id","shopText");
+     shopNowBtn.appendChild(text);
+
+     infoDiv.append(head,info,shopNowBtn);
+    j++;
+    k++;
+
+
+    interval = setInterval(function () {
+      slider.innerHTML = null;
+      if (i == slideData.length) {
+        i = 0;
+      }
+      let Img = document.createElement("img");
+      Img.src = slideData[i];
+      Img.style.width = "100%";
+      Img.style.height = "100%";
+      Img.style.borderRadius = "50%";
+      slider.append(Img);
+      i++;
+
+      
+      infoDiv.innerText = null;
+
+      if (j == headData.length) {
+        j = 0;
+      }
+      let Head = document.createElement("div");
+    Head.innerText = headData[j];
+    Head.setAttribute("id","Headline");
+      j++;
+
+      
+      if (k == infoData.length) {
+        k = 0;
+      }
+      let Info = document.createElement("div");
+    Info.innerText = infoData[k];
+    Info.setAttribute("id","Information");
+      k++;
+
+    
+      let ShopNowBtn = document.createElement("div");
+      ShopNowBtn.setAttribute("id","Shopbtn");
+     let Text = document.createElement("p");
+     Text.innerText = "Add to Cart";
+     Text.setAttribute("id","ShopText");
+     ShopNowBtn.appendChild(Text);
+
+      infoDiv.append(Head,Info,ShopNowBtn);
+
+    }, 4000);
+  }
+
+  start_Slide();
+
+
 
   
-  function addToCart(item) {
-  for(var i=0; i<cart.length; i++) {
-  if(cart[i].name == item.name) {
-  return alert("Product is already in the cart");
-  }
-  }
-  cart.push(item);
-  localStorage.setItem("cartItemsProject",JSON.stringify(cart));
-  window.location.href = "cart.html";
-  }
+  var TopWireless = [
+    {
+      name: "boAt Rockerz 255 Pro",
+      price: "899.00",
+      save: "74%",
+      chars: ["Charges within an hour", "Sporty with water resistant", "CVC Noise cancellation"],
+      image_url1:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/756866f0-25e4-4b5d-8b7c-546c2111da69_300x.png?v=1625045615",
+      image_url2:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_1_300x.png?v=1627276362",
+    },
+    {
+      name: "boAt Rockerz 400",
+      price: "1,099.00",
+      save: "63%",
+      chars: [
+        "Comfortable for work from home",
+        "Higher focus with noise cancellation",
+        "Upto 8 hours of playtime",
+      ],
+      image_url1:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/06bd8915-8db7-4575-9558-c97bf050d8d7_300x.png?v=1625044994",
+      image_url2:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_1_720x.png?v=1627276362",
+    },
+    {
+      name: "boAt Rockerz 245 V2",
+      price: "799.00",
+      save: "73%",
+      chars: [
+        "IPX5 water and sweat resistant",
+        "Fast Charging",
+        "Integrated controls",
+      ],
+      image_url1:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_1_300x.png?v=1627276362",
+      image_url2:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_1_300x.png?v=1627276362",
+    },
+  ];
+
+  var topWirelessItemDiv = document.getElementById("topWirelessItem");
+
+  displayTopWirelessItem(TopWireless);
+
+  function displayTopWirelessItem(TopWireless) {
+    TopWireless.map(function (item) {
+      // console.log(item);
+
+      var imgDiv = document.createElement("div");
+      imgDiv.setAttribute("id", "prodDiv");
+
+      var innerDiv = document.createElement("div");
+      innerDiv.setAttribute("id", "indiv");
+
+      var h3 = document.createElement("h3");
+      h3.textContent = item.name;
+
+      var h4 = document.createElement("h4");
+      h4.textContent = "Rs. " + item.price;
+
+      var h5 = document.createElement("h5");
+      h5.textContent = "YOU SAVE " + item.save;
+
+      var p1 = document.createElement("p");
+      p1.textContent = item.chars[0];
+      p1.setAttribute("id", "mt");
+
+      var p2 = document.createElement("p");
+      p2.textContent = item.chars[1];
+
+      var p3 = document.createElement("p");
+      p3.textContent = item.chars[2];
+
+      var img1 = document.createElement("img");
+      img1.setAttribute("src", item.image_url1);
+      img1.setAttribute("id", img1);
+      innerDiv.append(h5, img1);
+
+      var img2 = document.createElement("img");
+      img2.setAttribute("src", item.image_url2);
+      img2.setAttribute("id", img2);
+
+      // img1.addEventListener("mouseenter",mouseIn);
+
+      // function mouseIn(event) {
+      //   console.log(event.target.parentNode.img);
+      //   // innerDiv.append(h5,img2);
+      // }
+
+      // img1.addEventListener("mouseleave",mouseOut);
+
+      // function mouseOut() {
+      //   console.log("hi");
+      //  img1.removeEventListener("mouseenter",mouseIn);
+      // }
+
+      var btn = document.createElement("button");
+      btn.textContent = "Add to Cart";
+      btn.addEventListener("click", function () {
+        addToCart(item);
+      });
+
+      imgDiv.append(innerDiv, h3, h4, p1, p2, p3, btn);
+      topWirelessItemDiv.append(imgDiv);
+    });
+
+    function addToCart(item) {
+      for (var i = 0; i < cart.length; i++) {
+        if (cart[i].name == item.name) {
+          return alert("Product is already in the cart");
+        }
+      }
+      cart.push(item);
+      localStorage.setItem("cartItemsProject", JSON.stringify(cart));
+    }
 
   }
 
 
-  document.getElementById("man").addEventListener("click",gotoLogin);
 
-  function gotoLogin() {
-    window.location.href = "login.html";
+
+
+  
+  var TopWired = [
+    {
+      name: "boAt BassHeads 242",
+      price: "349.00",
+      save: "76%",
+      chars: ["Best in class earbuds for workouts", "Enjoy EDM, Bollywood or Rock with punchy bass", "Long lasting cable"],
+      image_url1:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/eab9128d-65cf-42ce-83a1-03492ec6157d_300x.png?v=1625046386",
+      image_url2:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_1_300x.png?v=1627276362",
+    },
+    {
+      name: "boAt BassHeads 100",
+      price: "299.00",
+      save: "70%",
+      chars: [
+        "Hawk designed in vibrant colors",
+        "Super extra bass",
+        "Tangle and hassle free",
+      ],
+      image_url1:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/553af994-244a-4b81-9d9e-9967a1b966b3_300x.png?v=1625046259",
+      image_url2:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_1_720x.png?v=1627276362",
+    },
+    {
+      name: "boAt BassHeads 225",
+      price: "449.00",
+      save: "55%",
+      chars: [
+        "Polished metal that never goes out of style",
+        "Incredible clarity with super extra bass",
+        "Noise isolation mic to drawn the world",
+      ],
+      image_url1:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/8a80ebca-13b6-4329-b8dd-e2e152bdcf6b_300x.png?v=1625046023",
+      image_url2:
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_1_300x.png?v=1627276362",
+    },
+  ];
+
+  var topWiredItemDiv = document.getElementById("topWiredItem");
+
+  displayTopWiredItem(TopWired);
+
+  function displayTopWiredItem(TopWired) {
+    TopWired.map(function (item) {
+      // console.log(item);
+
+      var imgDiv = document.createElement("div");
+      imgDiv.setAttribute("id", "prodDiv");
+
+      var innerDiv = document.createElement("div");
+      innerDiv.setAttribute("id", "indiv");
+
+      var h3 = document.createElement("h3");
+      h3.textContent = item.name;
+
+      var h4 = document.createElement("h4");
+      h4.textContent = "Rs. " + item.price;
+
+      var h5 = document.createElement("h5");
+      h5.textContent = "YOU SAVE " + item.save;
+
+      var p1 = document.createElement("p");
+      p1.textContent = item.chars[0];
+      p1.setAttribute("id", "mtfp");
+
+      var p2 = document.createElement("p");
+      p2.textContent = item.chars[1];
+
+      var p3 = document.createElement("p");
+      p3.textContent = item.chars[2];
+
+      var img1 = document.createElement("img");
+      img1.setAttribute("src", item.image_url1);
+      img1.setAttribute("id", img1);
+      innerDiv.append(h5, img1);
+
+      var img2 = document.createElement("img");
+      img2.setAttribute("src", item.image_url2);
+      img2.setAttribute("id", img2);
+
+      // img1.addEventListener("mouseenter",mouseIn);
+
+      // function mouseIn(event) {
+      //   console.log(event.target.parentNode.img);
+      //   // innerDiv.append(h5,img2);
+      // }
+
+      // img1.addEventListener("mouseleave",mouseOut);
+
+      // function mouseOut() {
+      //   console.log("hi");
+      //  img1.removeEventListener("mouseenter",mouseIn);
+      // }
+
+      var btn = document.createElement("button");
+      btn.textContent = "Add to Cart";
+      btn.addEventListener("click", function () {
+        addToCart(item);
+      });
+
+      imgDiv.append(innerDiv, h3, h4, p1, p2, p3, btn);
+      topWiredItemDiv.append(imgDiv);
+    });
+
+    function addToCart(item) {
+      for (var i = 0; i < cart.length; i++) {
+        if (cart[i].name == item.name) {
+          return alert("Product is already in the cart");
+        }
+      }
+      cart.push(item);
+      localStorage.setItem("cartItemsProject", JSON.stringify(cart));
+    }
+
   }
 
-  document.getElementById("cartimg").addEventListener("click",gotoCart);
 
-  function gotoCart() {
-    window.location.href = "cart.html";
+
+
+
+
+  
+  
+  let descriptionDiv = document.getElementById("description");
+  
+  let nameData1 = ["KARTIK","HARDIK","KL","SHIKHAR","SHREYAS","KIARA"];
+  let nameData2 = ["AARYAN","PANDYA","RAHUL","DHAWAN","IYER","ADVANI"];
+  let subTitleData = ["Cool. Calm. Collected.","Big. Bold. Brave.","Classy. Charismatic. Charm.","Daring. Daredevil. Dapper.","Determined. Dauntless. Defiant.","Groovy. Gorgeous. Glamorous."];
+  let descriptionData = [
+  "Keeping the flag of GlamourOfTheStars high and in full flow Kartik Aaryan has added an immense deal of coolness here during his journey as a boAthead",
+  "Just the way he swivels his bat and makes gigantic home runs look so easy, our #SoundOfTheChampions star has cleared the boundary on numerous occasions ever since he's been aboard as a boAthead ",
+  "Expect a powerful and smooth flowing drive through the covers when the classy boAthead KL Rahul decides to up the ante and take #SoundOfTheChampions to another new level",
+  "When the Gabbar of International Cricket carries the baton of #SoundOfTheChampions, expect great things in the offering. Our hard hitting boAthead Shikhar Dhawan creates memorable times with his presence.",
+  "It's a treat to watch boAthead Shreyas Iyer's determined stance on the field and the way he produces a sweet sound with his bat, just like #SoundOfTheChampions",
+  "Ever since making his first appearance as a boAthead for the #GlamourOfTheStars campaign since June 2019, Kiara's journey with boAthead has been impecable, inspirational and influentional.",
+  ];
+ 
+
+  let pic = document.getElementById("pic");
+  let picData = [
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Kartik_720x.jpg?v=1606303019",
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Hardik_720x.jpg?v=1606303041",
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Rahul_1_720x.jpg?v=1606303087",
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Shikhar_720x.jpg?v=1606303115",
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Shreyas_720x.jpg?v=1606303134",
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Kiara_1_720x.jpg?v=1606302997",
+  ];
+
+
+  let Interval;
+  function start_Slideshow() {
+    let a = 0;
+    let changeImg = document.createElement("img");
+    changeImg.src = picData[a];
+    changeImg.style.width = "100%";
+    changeImg.style.height = "100%";
+    pic.append(changeImg);
+    a++;
+
+    
+  
+    let headtitle = document.createElement("p");
+    headtitle.setAttribute("id","headtitle");
+    headtitle.innerText = "Meet the boAtheads";
+    
+
+let line = document.createElement("div");
+line.setAttribute("id","line");
+line.style.width = "133px";
+line.style.height="1.6px";
+line.style.backgroundColor = "red";
+
+    let c = 0;
+    let name = document.createElement("p");
+    name.setAttribute("id","name");
+    let first = document.createElement("span");
+    first.innerText = nameData1[c];
+    first.setAttribute("id","first");
+    let last = document.createElement("span");
+    last.setAttribute("id","last");
+    last.innerText = nameData2[c];
+   
+    name.append(first,last);
+   
+  
+
+    let d = 0;
+    let subTitle = document.createElement("p");
+    subTitle.innerText = subTitleData[d];
+    subTitle.setAttribute("id","subTitle");
+
+  let e = 0;
+    let des = document.createElement("p");
+     des.innerText = descriptionData[e];
+    des.setAttribute("id","des");
+  
+     descriptionDiv.append(headtitle,line,name,subTitle,des);
+    c++;
+  d++;
+  e++;
+
+
+    Interval = setInterval(function () {
+      pic.innerHTML = null;
+      if (a == picData.length) {
+        a = 0;
+      }
+      let changeImg = document.createElement("img");
+      changeImg.src = picData[a];
+      changeImg.style.width = "100%";
+      changeImg.style.height = "100%";
+      pic.append(changeImg);
+      a++;
+
+      
+      descriptionDiv.innerText = null;
+
+     let Headtitle = document.createElement("p");
+    Headtitle.setAttribute("id","headtitle");
+    Headtitle.innerText = "Meet the boAtheads";
+  
+let Line = document.createElement("div");
+Line.setAttribute("id","line");
+Line.style.width = "133px";
+Line.style.height="1.6px";
+Line.style.backgroundColor = "red";
+      
+      if (c == nameData1.length) {
+        c = 0;
+      }
+      let Name = document.createElement("p");
+    Name.setAttribute("id","name");
+    let First = document.createElement("span");
+    First.innerText = nameData1[c];
+    First.setAttribute("id","first");
+    let Last = document.createElement("span");
+    Last.setAttribute("id","last");
+    Last.innerText = nameData2[c];
+   
+    Name.append(First,Last);
+      c++;
+
+    
+    if (d == subTitleData.length) {
+        d = 0;
+      }
+   let SubTitle = document.createElement("p");
+    SubTitle.innerText = subTitleData[d];
+    SubTitle.setAttribute("id","subTitle");
+  d++;
+ 
+
+    if (e == descriptionData.length) {
+        e = 0;
+      }
+      let Des = document.createElement("p");
+     Des.innerText = descriptionData[e];
+    Des.setAttribute("id","des");
+    e++;
+
+
+      descriptionDiv.append(Headtitle,Line,Name,SubTitle,Des);
+
+    }, 4000);
   }
 
+  start_Slideshow();
 
-  document.getElementById("more").addEventListener("click",shop);
 
-  function shop() {
-    window.location.href = "offerzone.html";
-  }
+
+  let img1 = document.getElementById("img1");
+
+  let img1Img = document.createElement("img");
+  img1Img.src = "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Earphone_1296x_386bed9a-346e-4cb5-bad9-c075cc0b170c_540x.jpg?v=1633939293";
+  img1Img.style.height = "50%";
+  img1Img.style.width = "100%";
+  let imgInfo = document.createElement("p");
+  imgInfo.innerText = "Earphones Buying Guide - Everything You Need To Know"; 
+  imgInfo.setAttribute("id","imgInfo");
+  let readMore = document.createElement("div");
+  readMore.innerText = "Read more";
+  readMore.setAttribute("id","readMore");
+
+img1.append(img1Img,imgInfo,readMore);
+
+
+
+let img2 = document.getElementById("img2");
+
+let img2Img = document.createElement("img");
+img2Img.src = "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Main-banner_520x500_6852bb3b-c6d3-4588-8df9-2075ffada63a_540x.jpg?v=1639552370";
+img2Img.style.height = "50%";
+  img2Img.style.width = "100%";
+let imgInfo2 = document.createElement("p");
+imgInfo2.innerText = "Earphones Buying Guide - Everything You Need To Know"; 
+imgInfo2.setAttribute("id","imgInfo");
+let readMore2 = document.createElement("div");
+readMore2.innerText = "Read more";
+readMore2.setAttribute("id","readMore");
+
+img2.append(img2Img,imgInfo2,readMore2);
+
+
+
+let img3 = document.getElementById("img3");
+
+let img3Img = document.createElement("img");
+img3Img.src = "https://cdn.shopify.com/s/files/1/0057/8938/4802/articles/misfit_Jan_540x.jpg?v=1641807590";
+img3Img.style.height = "50%";
+img3Img.style.width = "100%";
+let imgInfo3 = document.createElement("p");
+imgInfo3.innerText = "Earphones Buying Guide - Everything You Need To Know"; 
+imgInfo3.setAttribute("id","imgInfo");
+let readMore3 = document.createElement("div");
+readMore3.innerText = "Read more";
+readMore3.setAttribute("id","readMore");
+
+img3.append(img3Img,imgInfo3,readMore3);
+
+
+
+
+let whatSay1 = document.getElementById("whatSay1");
+
+let whatSay1ImgDiv = document.createElement("div");
+whatSay1ImgDiv.setAttribute("id","whatSay1ImgDiv");
+let whatSay1Img = document.createElement("img");
+whatSay1Img.src = "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/1500_285a895e-72fd-4d8e-85d6-1b8e173d09f7_360x.png?v=1629710195";
+whatSay1Img.style.width = "100%";
+whatSay1Img.style.height = "100%";
+whatSay1ImgDiv.append(whatSay1Img);
+
+let whatSay1TextDiv = document.createElement("div");
+whatSay1TextDiv.setAttribute("id","whatSay1TextDiv");
+
+let quote1 = document.createElement("p");
+quote1.setAttribute("id","quote");
+quote1.innerText = `"It is value for money, best sound especially bass"`;
+
+let qname1 = document.createElement("p");
+qname1.setAttribute("id","qname");
+qname1.innerText = "SAREN MOHIL";
+
+let shopNow1 = document.createElement("div");
+shopNow1.setAttribute("id","shopNow");
+shopNow1.innerText = "Add to Cart";
+
+whatSay1TextDiv.append(quote1,qname1,shopNow1);
+
+whatSay1.append(whatSay1ImgDiv,whatSay1TextDiv);
+
+
+
+let whatSay2 = document.getElementById("whatSay2");
+
+let whatSay2ImgDiv = document.createElement("div");
+whatSay2ImgDiv.setAttribute("id","whatSay2ImgDiv");
+let whatSay2Img = document.createElement("img");
+whatSay2Img.src = "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/255-pro_360x.png?v=1629710195";
+whatSay2Img.style.width = "100%";
+whatSay2Img.style.height = "100%";
+whatSay2ImgDiv.append(whatSay2Img);
+
+let whatSay2TextDiv = document.createElement("div");
+whatSay2TextDiv.setAttribute("id","whatSay3TextDiv");
+
+let quote2 = document.createElement("p");
+quote2.setAttribute("id","quote2");
+quote2.innerText = `"The battery backup is something unbelievable"`;
+
+let qname2 = document.createElement("p");
+qname2.setAttribute("id","qname");
+qname2.innerText = "NAMSHAD K N";
+
+let shopNow2 = document.createElement("div");
+shopNow2.setAttribute("id","shopNow");
+shopNow2.innerText = "Add to Cart";
+
+whatSay2TextDiv.append(quote2,qname2,shopNow2);
+
+whatSay2.append(whatSay2ImgDiv,whatSay2TextDiv);
+
+
+
+let whatSay3 = document.getElementById("whatSay3");
+
+let whatSay3ImgDiv = document.createElement("div");
+whatSay3ImgDiv.setAttribute("id","whatSay3ImgDiv");
+let whatSay3Img = document.createElement("img");
+whatSay3Img.src = "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/381_360x.png?v=1629710195";
+whatSay3Img.style.width = "100%";
+whatSay3Img.style.height = "100%";
+whatSay3ImgDiv.append(whatSay3Img);
+
+let whatSay3TextDiv = document.createElement("div");
+whatSay3TextDiv.setAttribute("id","whatSay3TextDiv");
+
+let quote3 = document.createElement("p");
+quote3.setAttribute("id","quote");
+quote3.innerText = `"Amazing product, great sound quality and the mic performance is also awesome"`;
+
+let qname3 = document.createElement("p");
+qname3.setAttribute("id","qname");
+qname3.innerText = "SAREN MOHIL";
+
+let shopNow3 = document.createElement("div");
+shopNow3.setAttribute("id","shopNow");
+shopNow3.innerText = "Add to Cart";
+
+whatSay3TextDiv.append(quote3,qname3,shopNow3);
+
+whatSay3.append(whatSay3ImgDiv,whatSay3TextDiv);
+
+
+document.getElementById("gift").addEventListener("mouseenter", function() {
+document.getElementById("giftHover").style.display = "block";
+});
+
+document.getElementById("gift").addEventListener("mouseleave", function() {
+document.getElementById("giftHover").style.display = "none";
+});
+
+
+document.getElementById("man").addEventListener("mouseenter", function() {
+document.getElementById("myAccHover").style.display = "block";
+});
+
+document.getElementById("man").addEventListener("mouseleave", function() {
+document.getElementById("myAccHover").style.display = "none";
+});
+
+
+document.getElementById("cartimg").addEventListener("mouseenter", function() {
+document.getElementById("cartHover").style.display = "block";
+});
+
+document.getElementById("cartimg").addEventListener("mouseleave", function() {
+document.getElementById("cartHover").style.display = "none";
+});
+
+
+document.getElementById("man").addEventListener("click", function() {
+document.getElementById("loginPopUp").style.display = "block";
+});
+
+document.getElementById("x").addEventListener("click", function() {
+document.getElementById("loginPopUp").style.display = "none";
+});
+
+document.getElementById("login").addEventListener("click",function() {
+  window.location.href = "login.html";
+});
+
+document.getElementById("cash").addEventListener("mouseenter",function() {
+  document.getElementById("cards").style.backgroundColor="white";
+  document.getElementById("cards").style.color="black";
+  document.getElementById("cards").style.border="2px solid red";
+});
+document.getElementById("cash").addEventListener("mouseleave",function() {
+  document.getElementById("cards").style.backgroundColor="red";
+  document.getElementById("cards").style.color="white";
+});
+
+document.getElementById("contiShop").addEventListener("click",function() {
+  window.location.href = "home.html";
+  document.getElementById("cartPage").style.display = "none";
+});
+
+document.getElementById("cartimg").addEventListener("click",function() {
+document.getElementById("cartPage").style.display = "block";
+document.getElementById("cont1").style.opacity="0.5";
+document.getElementById("redstrip").style.opacity="0.5";
+document.getElementById("blackStrip").style.opacity="0.5";
+document.getElementById("cartPage").style.zIndex = "3";
+document.getElementById("hi").style.display = "block";
+document.getElementById("hi").style.zIndex = "2";
+document.getElementById("cont1").style.zIndex = "1";
+document.getElementById("redstrip").style.zIndex = "1";
+document.getElementById("blackStrip").style.zIndex = "1";
+
+});
+
+
+document.getElementById("cartItemCount").addEventListener("click",function() {
+document.getElementById("cartPage").style.display = "block";
+document.getElementById("cont1").style.opacity="0.5";
+document.getElementById("redstrip").style.opacity="0.5";
+document.getElementById("blackStrip").style.opacity="0.5";
+document.getElementById("cartPage").style.zIndex = "3";
+document.getElementById("hi").style.display = "block";
+document.getElementById("hi").style.zIndex = "2";
+document.getElementById("cont1").style.zIndex = "1";
+document.getElementById("redstrip").style.zIndex = "1";
+document.getElementById("blackStrip").style.zIndex = "1";
+
+});
+
+
+document.getElementById("backImg").addEventListener("click",function() {
+  document.getElementById("cartPage").style.display = "none"; 
+  document.getElementById("cont1").style.opacity = "unset";
+document.getElementById("redstrip").style.opacity = "unset";
+document.getElementById("blackStrip").style.opacity = "unset";
+})
+
+
+document.getElementById("hardik").addEventListener("mouseenter",function() {
+  document.getElementById("ht").style.display="none"; 
+});
+
+document.getElementById("hardik").addEventListener("mouseleave",function() {
+  document.getElementById("ht").style.display="block"; 
+})
+
+document.getElementById("kayra").addEventListener("mouseenter",function() {
+  document.getElementById("kt").style.display="none"; 
+});
+
+document.getElementById("kayra").addEventListener("mouseleave",function() {
+  document.getElementById("kt").style.display="block"; 
+})
+
+document.getElementById("paji").addEventListener("mouseenter",function() {
+  document.getElementById("pt").style.display="none"; 
+});
+
+document.getElementById("paji").addEventListener("mouseleave",function() {
+  document.getElementById("pt").style.display="block"; 
+})
+
+document.getElementById("rahulImgDiv").addEventListener("mouseenter",function() {
+  document.getElementById("rahulQuote").style.display="none"; 
+  document.getElementById("rahulImgDiv").style.marginTop = "-492px";
+});
+
+document.getElementById("rahulImgDiv").addEventListener("mouseleave",function() {
+  document.getElementById("rahulQuote").style.display="block"; 
+  document.getElementById("rahulImgDiv").style.marginTop = "-521.5px";
+})
+
+document.getElementById("kartik").addEventListener("mouseenter",function() {
+  document.getElementById("kartikQuote").style.display="none";
+  document.getElementById("kartik").style.marginTop="-492.5px"; 
+});
+
+document.getElementById("kartik").addEventListener("mouseleave",function() {
+  document.getElementById("kartikQuote").style.display="block"; 
+  document.getElementById("kartik").style.marginTop="-522px";
+})
+
+
+
+
+
+var CartData = JSON.parse(localStorage.getItem("cartItemsProject"));
+
+var cartproductDiv = document.getElementById("cartproduct");
+
+displayCartproductItem(CartData);
+
+function displayCartproductItem(CartData) {
+  CartData.map(function (item) {
+    // console.log(item);
+
+    var cartItem = document.createElement("div");
+    cartItem.setAttribute("id", "cartItemDiv");
+
+    var ImageDiv = document.createElement("div");
+    ImageDiv.setAttribute("id", "ImageDiv");
+
+    var DescriptionDiv = document.createElement("div");
+    DescriptionDiv.setAttribute("id", "DescriptionDiv");    
+
+    var img1 = document.createElement("img");
+    img1.setAttribute("src", item.image_url1);
+    img1.setAttribute("height", "120px");
+    ImageDiv.append(img1);
+
+    var img2 = document.createElement("img");
+    img2.setAttribute("src", item.image_url2);
+    img2.setAttribute("id", img2);
+
+    // img1.addEventListener("mouseenter",mouseIn);
+
+    // function mouseIn(event) {
+    //   console.log(event.target.parentNode.img);
+    //   // innerDiv.append(h5,img2);
+    // }
+
+    // img1.addEventListener("mouseleave",mouseOut);
+
+    // function mouseOut() {
+    //   console.log("hi");
+    //  img1.removeEventListener("mouseenter",mouseIn);
+    // }
+
+
+
+    var name = document.createElement("div");
+    name.textContent = item.name;
+    name.setAttribute("id","Ctitle");
+
+    var priceAndOff = document.createElement("div"); 
+    priceAndOff.setAttribute("id","priceAndOff");
+
+    var price = document.createElement("div");
+    price.textContent = "Rs. " + item.price;
+    price.setAttribute("id","Cprice");
+
+    var offfDiv = document.createElement("div");
+    offfDiv.textContent = item.save + " OFF";
+    offfDiv.setAttribute("id","Coff");
+
+    priceAndOff.append(price,offfDiv);
+
+    var QuantityDiv = document.createElement("div");
+    QuantityDiv.setAttribute("id", "QuantityDiv");
+
+    var decreaseCount = document.createElement("div");
+    decreaseCount.innerText = "-";
+    decreaseCount.setAttribute("id","decrease");
+
+    var Count = document.createElement("div");
+    Count.innerText = 1;
+    Count.setAttribute("id","Count");
+
+    var increaseCount = document.createElement("div");
+    increaseCount.innerText = "+";
+    increaseCount.setAttribute("id","increase");
+
+    decreaseCount.addEventListener("click",function () {
+      if(Count.innerText>=2) {
+        Count.innerText = Number(Count.innerText) - 1;
+        var total = CartData.reduce(function (ac,cv) {
+    return (ac+Number(cv.price.split(",").join("")));
+    },0);
+
+    var x = Number(item.price.split(",").join(""));
+    //    console.log(x);
+    total = total - x;
+    document.getElementById("csubT").innerText = `Rs  ${total}`;
+      } 
+    })
+
+    increaseCount.addEventListener("click",function () {
+      if(Count.innerText>=1) {
+        Count.innerText = Number(Count.innerText) + 1;
+        var total = CartData.reduce(function (ac,cv) {
+    return (ac+Number(cv.price.split(",").join("")));
+    },0);
+
+    var x = Number(item.price.split(",").join(""));
+    //    console.log(x);
+    total = total + x;
+    console.log(total);
+    console.log("clicked");
+    document.getElementById("csubT").innerText = `Rs  ${total}`;
+      } 
+    })
+
+    var deleteDiv = document.createElement("div");
+    deleteDiv.setAttribute("id", "deleteDiv");
+
+    var deleteImg = document.createElement("img");
+    deleteImg.setAttribute("src", "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Group_1_93145e45-8530-46aa-9fb8-6768cc3d80d2.png?v=1633783107");
+    deleteImg.setAttribute("height","20px");
+
+    deleteDiv.append(deleteImg);
+
+    deleteDiv.addEventListener("click",function (event,index) {
+      // console.log("hi");
+        // console.log(index);
+        // console.log(cartItems.length);
+        // console.log(event.target.parentNode.parentNode);
+        event.target.parentNode.parentNode.remove();
+        var remove = CartData.splice(index,1);
+        // console.log(remove);
+        // console.log(cartItems.length);
+        localStorage.setItem("cartItemsProject",JSON.stringify(CartData));
+
+        document.getElementById("total").innerText = CartData.length + " items";
+        document.getElementById("cartItemCount").innerText = CartData.length;
+        //  cartproductDiv.innerHTML = "";
+
+        //   displayCartproductItem(CartData);
+
+       updateTotal(index);
+
+    
+
+})
+
+
+
+    QuantityDiv.append(decreaseCount,Count,increaseCount);
+
+    DescriptionDiv.append(name,priceAndOff,QuantityDiv);
+
+    cartItem.append(ImageDiv,DescriptionDiv,deleteDiv);
+    cartproductDiv.append(cartItem);
+
+});
+}
+
+document.getElementById("total").innerText = CartData.length + " items";
+document.getElementById("cartItemCount").innerText = CartData.length;
+
+
+var total = CartData.reduce(function (ac,cv) {
+        return ac + Number(cv.price.split(",").join(""));
+    },0);
+document.getElementById("csubT").innerText = `Rs  ${total}`;
+
+
+function updateTotal(index) {
+
+var total = CartData.reduce(function (ac,cv) {
+return ac + Number(cv.price.split(",").join(""));
+},0);
+total = total - CartData[index].price.split(",").join("");
+document.getElementById("csubT").innerText = `Rs  ${total}`;
+
+}
+
+
+
+document.getElementById("apply").addEventListener("click",applyPromo);
+
+function applyPromo() {
+if(document.getElementById("enterPromo").value == "boAt30") {
+    var total = CartData.reduce(function (ac,cv) {
+    return (ac+Number(cv.price.split(",").join("")));
+},0);
+
+var x = (total*(30/100));
+//    console.log(x);
+total = total - x;
+document.getElementById("csubT").innerText = `Rs  ${total}`;
+
+document.getElementById("enterPromo").value = "";
+}
+}
+
+
+
+
 
 </script>

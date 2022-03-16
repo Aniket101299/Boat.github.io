@@ -89,9 +89,14 @@
     </div>
     <h1>Enter your OTP</h1>
     <input id="otp" type="password" placeholder="enter your OTP" >
-    <button>Submit</button>
+    <button id="submit">Submit</button>
   </body>
 </html>
+
+
+
+
+
 
 <script>
   document.getElementById("pay").addEventListener("click", payCheck);
@@ -109,7 +114,8 @@
       if (cvv.length == 3) {
         if (exp.length == 5 && name.length > 1) {
           alert("OTP sent to your registered mobile number");
-          var btn = document.querySelector("button").addEventListener("click",checkOtp);
+          document.getElementById("submit").addEventListener("click",checkOtp);
+ 
         } else {
           alert("Enter proper expiry date of card");
         }
@@ -130,4 +136,5 @@
 }
 document.getElementById("otp").value = "";
 }
+
 </script>
