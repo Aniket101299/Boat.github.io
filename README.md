@@ -32,6 +32,8 @@ Deployment Link :- https://boat-github-io-fbxtjvmfn-aniket101299.vercel.app/
 - Increase/decrease items in cart
 - Payment
 
+## About Website:
+
 ## Home Page
 
 This is the home page of website from where user can explore and buy various types of products. From home page itself user can Sign In or Login to website, user can visit cart page.
@@ -40,31 +42,31 @@ This is the home page of website from where user can explore and buy various typ
 
 ## Product Categories
 
-Daily Deals
+* Daily Deals
 
 ![Home_page](https://user-images.githubusercontent.com/91543059/159109023-d3138610-cf44-49d8-8e32-e58c0c550801.png)
 
-Trending in Earbuds
+* Trending in Earbuds
 
 ![Home_page](https://user-images.githubusercontent.com/91543059/159109114-633a02a5-fb2c-4be5-a4c9-97da9eaa4131.png)
 
-Newly Launched
+* Newly Launched
 
 ![Home_page](https://user-images.githubusercontent.com/91543059/159109199-9cae1f8b-755c-4f6b-8ed5-a560ff7efdcb.png)
 
-Smart Watches
+* Smart Watches
 
 ![Home_page](https://user-images.githubusercontent.com/91543059/159109217-ece8f2c9-584e-4929-bb9f-501f4584d887.png)
 
-New Launches
+* New Launches
 
 ![Home_page](https://user-images.githubusercontent.com/91543059/159109281-626dbd2a-9d6d-41d8-95a2-c4f7b75d556f.png)
 
-Top Wireless
+* Top Wireless
 
 ![Home_page](https://user-images.githubusercontent.com/91543059/159109298-1b5b4f03-7289-4824-834b-812b2df885bd.png)
 
-Top Wired
+* Top Wired
 
 ![Home_page](https://user-images.githubusercontent.com/91543059/159109314-18578c88-5502-48be-9798-09f884dd28b4.png)
 
@@ -100,7 +102,10 @@ Want to run in your local Machine? Great!
 
 To run, follow these steps:
 
-- Clone my repository on your desktop.
+- * Clone the repository
+    ``` 
+    https://github.com/Aniket101299/Boat.github.io.git
+  
 - Open the code in your VS code.
 - Open index.html which is Home page.
 - Then you can Navigate through other pages from Home page.
