@@ -102,8 +102,8 @@ Want to run in your local Machine? Great!
 
 To run, follow these steps:
 
-- * Clone the repository
-    ``` 
+-  Clone the repository
+    
     https://github.com/Aniket101299/Boat.github.io.git
   
 - Open the code in your VS code.
