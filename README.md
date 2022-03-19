@@ -15,10 +15,9 @@ Thus, in 2014, they kickstarted a great voyage in Indian consumer waters.
 </tr>
 </table>
 
-# boAt Clone 
+# boAt Clone
 
 Deployment Link :- https://boat-github-io-fbxtjvmfn-aniket101299.vercel.app/
-
 
 ## Built with Tech Stacks:
 
@@ -34,10 +33,12 @@ Deployment Link :- https://boat-github-io-fbxtjvmfn-aniket101299.vercel.app/
 - Payment
 
 ## Home Page
+
 This is the home page of website from where user can explore and buy various types of products. From home page itself user can Sign In or Login to website, user can visit cart page.
 ![Home_page](https://user-images.githubusercontent.com/91543059/159108856-705d397a-2eb2-4944-998f-417e9f220de6.png)
 
 ## Product Categories
+
 Daily Deals
 ![Home_page](https://user-images.githubusercontent.com/91543059/159109023-d3138610-cf44-49d8-8e32-e58c0c550801.png)
 
@@ -60,26 +61,29 @@ Top Wired
 ![Home_page](https://user-images.githubusercontent.com/91543059/159109314-18578c88-5502-48be-9798-09f884dd28b4.png)
 
 ## Sign up Page
-From this page by signing up user can create his/her account for login to website. 
+
+From this page by signing up user can create his/her account for login to website.
 ![Sign_in](https://user-images.githubusercontent.com/91543059/159109462-37aa8668-3aa1-42f0-bd53-ae3c748f73ee.png)
 
 ## Login Page
-From this page user can login to the website. 
+
+From this page user can login to the website.
 ![Login](https://user-images.githubusercontent.com/91543059/159109515-26188de8-f5a5-41c9-af61-ae54cba433bd.png)
 
 ## Cart Page
+
 This is the cart page where user can see the products that was added in cart. Here user can increase or decrease the quantity of product, remove product from cart and from here user can go to payment page or home page.
 ![Cart](https://user-images.githubusercontent.com/91543059/159109631-a3c897f1-2f1a-4b40-8bc6-589b0d58ea1e.png)
 
 ## Payment Page
+
 This is the payment page of the website from here user can pay the amount and order the products. User can make payment of total amount shown in cart.
 ![Payment](https://user-images.githubusercontent.com/91543059/159109905-6738dce1-01d3-4c22-bc0a-d581fef41b26.png)
-
-
 
 ## [Getting Started]
 
 ### Execution..
+
 Want to run in your local Machine? Great!
 
 To run, follow these steps:
@@ -89,11 +93,6 @@ To run, follow these steps:
 - Open index.html which is Home page.
 - Then you can Navigate through other pages from Home page.
 
-
 ## Creator
 
 - [@Aniket Darekar]()
-
-
-
-
