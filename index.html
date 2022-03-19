@@ -262,7 +262,7 @@
         padding-bottom: 8px;
         font-family: Montserrat, sans-serif;
         font-size: 13px;
-        font-weight: 800;
+        font-weight: 700;
       padding-left: 8px;
       }
       #prodDiv > h3 {
@@ -801,7 +801,8 @@
       }
       .rahulimage_overlay{
       position: absolute;
-      top: 746.2%;
+      /* top: 746.2%; */
+      top:777.9%;
       left: 50%;
       width: 25%;
       height:69.8%;
@@ -1458,14 +1459,17 @@
       }
       #inputAndBtn{
         display: flex;
+       /* border: 1px solid yellow; */
+      height: 35px;
       }
       #inputAndBtn input{
       background-color: black;
       color: whitesmoke; 
-      padding: 8px;
+     padding-right: 8px;
       padding-left: 12px;
       border: 1px solid #969696; 
       width: 200px;
+      
       border-radius: 5px;
       font-size: 13.33px;
       font-weight: 400;
@@ -1475,11 +1479,12 @@
         cursor: pointer;
         color: white;
         border: 1.5px solid red;
-        padding: 8px 10px 8px 10px;
+        padding: 8px 12px 8px 12px;
         border-radius: 5px;
-        width: 120px;
+        width: 130px;
         height: 35px;
         margin-left: 3px;
+        margin-top: 0px;
       }
       #inputAndBtn button:hover{
         background-color: red;
@@ -3201,7 +3206,9 @@
       var btn = document.createElement("button");
       btn.textContent = "Add to Cart";
       btn.addEventListener("click", function () {
+      
         addToCart(item);
+     
       });
 
       imgDiv.append(innerDiv, h3, h4, p1, p2, p3, btn);
@@ -3216,6 +3223,7 @@
       }
       cart.push(item);
       localStorage.setItem("cartItemsProject", JSON.stringify(cart));
+   
     }
 
   }
