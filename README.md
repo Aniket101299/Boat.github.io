@@ -17,7 +17,7 @@ Thus, in 2014, they kickstarted a great voyage in Indian consumer waters.
 
 # boAt Clone 
 
-Deployment Link :- https://rohit753.github.io/Adidas-Clone/index.html
+Deployment Link :- boat-github-io-h4b860w3e-aniket101299.vercel.app
 
 
 ## Built with Tech Stacks:
