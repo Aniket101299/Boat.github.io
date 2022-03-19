@@ -17,7 +17,7 @@ Thus, in 2014, they kickstarted a great voyage in Indian consumer waters.
 
 # boAt Clone 
 
-Deployment Link :- boat-github-io-h4b860w3e-aniket101299.vercel.app
+Deployment Link :- https://boat-github-io-fbxtjvmfn-aniket101299.vercel.app/
 
 
 ## Built with Tech Stacks:
